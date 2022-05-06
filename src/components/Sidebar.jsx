@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Sidebar.css"
+import {Link} from "react-router-dom"
 
 function Sidebar({sidebar}) {
   return (
@@ -20,7 +21,7 @@ function Sidebar({sidebar}) {
 
         <li>NEW</li>
         <li>ISLAND LIFENEW</li>
-        <li>BASICS</li>
+        <Link to="/ProductPage1">  <li>BASICS</li>      </Link>
         <li>LINEN</li>
         <li>BEST SELLERS</li>
         <li>SHIRTS</li>

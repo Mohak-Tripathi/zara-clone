@@ -1,7 +1,7 @@
 import FullPageExample from './components/LandingPage';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-
+import { Route, Routes } from 'react-router-dom';
 
 
 // import './App.css';
@@ -23,12 +23,7 @@ import Sidebar from './components/Sidebar';
 //     <div className="App">
 
 
-// {/* <Routes> 
-// <Route path="/" element={<Home />}/> 
-//   <Route path="/home" element={<Home />}/> 
-//   <Route path="/login" element={<Login/>}/> 
-//   <Route path="/landing" element={<LandingPage/>}/> 
-// </Routes> */}
+
 
     
 // <LandingPage />
@@ -85,12 +80,18 @@ const App = () => {
 
 <Header openSidebar={toggleSidebar}/>  
 
-   
-    
-<Sidebar sidebar={sidebar}/> 
-    <FullPageExample />
+<Routes> 
 
-<ProductPageZara />
+   <Route path="/ProductPage1" element={<ProductPageZara />}/> 
+   <Route path="/HomePage" element={<FullPageExample  />}/> 
+   
+    </Routes>  
+    
+<Sidebar sidebar={sidebar}/>
+
+
+
+
 
     </>
   );

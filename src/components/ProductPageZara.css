@@ -1,0 +1,24 @@
+.subdivproduct{
+    display: flex;
+
+}
+
+.render-data{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+    border: 1px solid red;
+    width: 100%;
+    margin: auto;
+
+}
+
+.Main{
+    width: 90vw;
+    border: 1px solid blue;
+    margin: auto;
+}
+
+.Product_image_tri{
+    width: 100%;
+}

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import {useState} from "react"
+import "./ProductPageZara.css"
 
 function ProductPageZara() {
     const[Product, setProduct] = useState([])
@@ -21,12 +22,29 @@ const getProduct = async() =>{
     setProduct(res)
 }
   return (
-    <div>
+
+    <div className='Main' >     
+
+    <div className="render-data" >
+
 {Product.map((elem)=>(
-<img   src={elem.image} />
+<div > 
+     <img className='Product_image_tri'  src={elem.image} alt=""/>
+
+<div className='subdivproduct'> 
+<div>  {elem.name} </div>
+<div>  {elem.price} </div>
+</div> 
+
+
+</div>
+
 ))}
+ </div>
+
     </div>
   )
+ 
 }
 
 export default ProductPageZara
