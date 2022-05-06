@@ -1,7 +1,9 @@
 import FullPageExample from './components/LandingPage';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
 
-import Sliding_navbar from './components/Sliding_navbar';
-// // import logo from './logo.svg';
+
+
 // import './App.css';
 // // import Home from './components/Home';
 
@@ -41,7 +43,7 @@ import Sliding_navbar from './components/Sliding_navbar';
 
 
 
-import React from 'react';
+import React, { useState } from 'react';
 // import{Route,Routes}from "react-router-dom"
 // import Navbar from './Components/Navbar';
 // import Home from './Components/Home';
@@ -49,12 +51,23 @@ import React from 'react';
 // import Signup from './Components/Signup';
 
 
-import LandingPage from "./components/LandingPage"
+// import LandingPage from "./components/LandingPage"
 
 
 import './App.css';
+import ProductPageZara from './components/ProductPageZara';
+
 
 const App = () => {
+  
+  const[sidebar, setSidebar] = useState(false)
+
+  const toggleSidebar = () =>{
+    setSidebar((prevState) =>  !prevState) 
+     
+    
+  }
+
   return (
     <>
     {/* <Navbar/>
@@ -70,11 +83,15 @@ const App = () => {
     <Route exact path="/"><Contact/></Route>
     <Route exact path="/"><Home/></Route> */}
 
-<Sliding_navbar />
-    <LandingPage />
-    
+<Header openSidebar={toggleSidebar}/>  
 
-    {/* <FullPageExample /> */}
+   
+    
+<Sidebar sidebar={sidebar}/> 
+    <FullPageExample />
+
+<ProductPageZara />
+
     </>
   );
 }

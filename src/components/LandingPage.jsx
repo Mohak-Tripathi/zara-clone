@@ -84,6 +84,7 @@ export default class FullPageExample extends React.Component {
     return (
       <FullPage controls>
         <Slide>
+        <i className="ri-menu-line"></i>
         <img 
             src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-18//w/733/IMAGE-landscape-f5924756-a852-4fe8-aecc-c50fa156d560-default_0.jpg?ts=1651507433802"
             alt=""
