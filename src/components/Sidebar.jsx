@@ -22,11 +22,13 @@ function Sidebar({sidebar}) {
         <li>NEW</li>
         <li>ISLAND LIFENEW</li>
         <Link to="/ProductPage1">  <li>BASICS</li>      </Link>
-        <li>LINEN</li>
+        <Link to="/LinenPage">   <li>LINEN</li>     </Link>
+       
         <li>BEST SELLERS</li>
         <li>SHIRTS</li>
         <li>T-SHIRTS</li>
-        <li>POLO SHIRTS</li>
+       
+        <Link to="/PoloPage">    <li>POLO SHIRTS</li>    </Link>
         <li>TROUSERS</li>
         <li>JEANS</li>
         <li>SHORTS</li>

@@ -1,4 +1,4 @@
-.render_data_Linen{
+.render_data_Polo{
     display: grid;
     grid-template-columns:repeat(4,1fr);
     gap:14px;
@@ -8,12 +8,12 @@
 
 }
 
-.Main_linen_tri{
+.Main_poloShirt_tri{
     width: 90vw;
     /* border: 1px solid blue; */
     margin: auto;
 }
 
-.Linen_image{
+.polo_image{
     width: 100%
 }

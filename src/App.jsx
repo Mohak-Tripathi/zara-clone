@@ -2,7 +2,7 @@ import FullPageExample from './components/LandingPage';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import { Route, Routes } from 'react-router-dom';
-
+import PoloShirt from "./components/PoloShirt"
 
 // import './App.css';
 // // import Home from './components/Home';
@@ -51,6 +51,7 @@ import React, { useState } from 'react';
 
 import './App.css';
 import ProductPageZara from './components/ProductPageZara';
+import LinenPage from './components/LinenPage';
 
 
 const App = () => {
@@ -84,7 +85,8 @@ const App = () => {
 
    <Route path="/ProductPage1" element={<ProductPageZara />}/> 
    <Route path="/HomePage" element={<FullPageExample  />}/> 
-   
+   <Route path="/LinenPage" element={<LinenPage  />}/> 
+   <Route path="/PoloPage" element={<PoloShirt  />}/> 
     </Routes>  
     
 <Sidebar sidebar={sidebar}/>

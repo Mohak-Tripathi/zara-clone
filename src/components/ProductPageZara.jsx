@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react'
 import {useState} from "react"
+
 import "./ProductPageZara.css"
 
 function ProductPageZara() {
     const[Product, setProduct] = useState([])
 
-    console.log(Product)
+    // console.log(Product)
 useEffect(()=>{
 
 getProduct()
