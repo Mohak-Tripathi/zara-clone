@@ -1,0 +1,106 @@
+/* .signup-box{
+  border: 1px solid red;
+}
+
+.two-btns{
+  display:flex ;
+ justify-content: space-between; 
+ width: 200px;
+} */
+.container{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    margin: 4%;
+  }
+  input[type=text]{
+    width: 80%;
+    padding:5px 12px 0 20px;
+    margin: 18px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size:70%;
+   
+    
+  }
+  .number-box{
+    display: flex;
+  }
+  .input-text-box1{
+    display: flex;
+    
+  }
+  .tele{
+    width: 25%;
+    margin-top: 9%;
+  }
+  .teleinput{
+    margin-left:-10%;
+    width:96%;
+  }
+  .checkbox{
+    width: 100%;
+    display: flex;
+    margin-top: 1%;
+   
+  }
+  .checkbox__label{
+    width: 100%;
+    margin-left: 3%;
+    font-size: 100%;
+    color:  gray;
+    font-size:70%
+  
+  }
+  .signupbtn{
+  width: 85%;
+  background-color: black;
+  color: white;
+  margin-top: 16%;
+  
+  }
+  .Left-form{
+    /* border: 1px solid red; */
+    width: 30%;
+  }
+  .right-form{
+    /* border: 1px solid green; */
+    width: 40%;
+  }
+  .dot{
+    color: white
+    ;
+  }
+  .input-text-options{
+  font-size: 90%;
+  color: gray;
+  }
+  .changeform-btn{
+  display: flex;
+  width: 14%;
+  justify-content: space-between;
+  margin: 4%;
+  font-size: 80%;
+  font-weight:bold;
+  }
+  .headingform{
+    margin: 4%;
+    font-size: 98%;
+    color: black;
+  }
+  .signup-header{
+    display: flex;
+    width: 40%;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    margin: 4%;
+  }
+  .list{
+  text-decoration: none;
+  color:gray;
+  font-size: 68%;
+  }
+  .header-heading{
+    font-size: 80%;
+  }

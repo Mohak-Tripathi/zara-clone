@@ -1,0 +1,55 @@
+.container-login{
+    width: 60%;
+        display: flex;
+        color: gray;
+    font-size: 90%;
+    margin:14%;
+    justify-content: space-between;
+    margin: 2%;
+    margin-top: 9%;
+    }
+    .right-p{
+    margin-top: 2%;
+    
+    }
+    .right-login-form{
+        width: 50%;
+        margin-top: 8%;
+    }
+    .forgotpassword{
+        color: black;
+        font-size: 70%;
+    
+    }
+    .Left-login-form{
+        width: 40%;
+    }
+    .login-heading{
+        margin: 4%;
+        color: black;
+    }
+    .create-btn{
+        background-color: black;
+        width: 80%;
+        height: 16%;
+        text-align: center;
+        font-size: 90%;
+        color: white;
+        text-decoration: none;
+    }
+    .create-btn:hover{
+    color: white;
+    }
+    .login-btn{
+        background-color: black;
+        width: 80%;
+        height: 13%;
+        text-align: center;
+        font-size: 90%;
+        color: white;
+        text-decoration: none;
+        margin-top: 6%;
+    }
+    .login-btn:hover{
+    color: white;
+    }
