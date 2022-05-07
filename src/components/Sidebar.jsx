@@ -9,7 +9,7 @@ function Sidebar({sidebar}) {
 <img className="Zara_Logo_Tri"src="https://cdn.cookielaw.org/logos/5435e8e3-1f77-4efd-bb7e-591b5a6e876e/d7899571-c1e4-4d71-8e87-09246e838e5d/d5b1d450-62b7-4f62-94ba-f9835c6495ed/Standard.png" alt="title" />
 
 <div className='Categroy--tripathi'>    
-       
+  
 
        
        <div>WOMEN</div>
@@ -21,14 +21,14 @@ function Sidebar({sidebar}) {
 
         <li>NEW</li>
         <li>ISLAND LIFENEW</li>
-        <Link to="/ProductPage1">  <li>BASICS</li>      </Link>
-        <Link to="/LinenPage">   <li>LINEN</li>     </Link>
+        <Link to="/ProductPage1"><li>BASICS</li></Link>
+        <Link to="/LinenPage"><li>LINEN</li></Link>
+        <Link to="/PoloPage"><li>POLO SHIRTS</li></Link>
        
         <li>BEST SELLERS</li>
         <li>SHIRTS</li>
         <li>T-SHIRTS</li>
        
-        <Link to="/PoloPage">    <li>POLO SHIRTS</li>    </Link>
         <li>TROUSERS</li>
         <li>JEANS</li>
         <li>SHORTS</li>

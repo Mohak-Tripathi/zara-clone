@@ -1,0 +1,11 @@
+.detail_div{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    /* justify-items: center; */
+    align-items: center;
+}
+.detail_img{
+    width: 500px;
+    height: 400px;
+}

@@ -15,7 +15,7 @@ getProduct()
 
 const getProduct = async() =>{
 
-    const data= await fetch("http://localhost:8888/product")
+    const data= await fetch("http://localhost:8080/product")
 
     const res = await data.json()
 

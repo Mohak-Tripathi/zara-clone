@@ -3,55 +3,11 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import { Route, Routes } from 'react-router-dom';
 import PoloShirt from "./components/PoloShirt"
-
-// import './App.css';
-// // import Home from './components/Home';
-
-// import React from 'react';
-
-// import LandingPage from './components/LandingPage';
-
-// // import Login from './components/Login';
-// // import {useNavigate, Route, Routes} from "react-router-dom"
-// // import { useEffect } from 'react';
-
-
-// export function App() {
- 
- 
-//   return (
-//     <div className="App">
-
-
-
-
-    
-// <LandingPage />
-
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
-
-
-
 import React, { useState } from 'react';
-// import{Route,Routes}from "react-router-dom"
-// import Navbar from './Components/Navbar';
-// import Home from './Components/Home';
-// import Login from './Components/Login';
-// import Signup from './Components/Signup';
-
-
-// import LandingPage from "./components/LandingPage"
-
-
 import './App.css';
 import ProductPageZara from './components/ProductPageZara';
 import LinenPage from './components/LinenPage';
+import DetailPage from './components/DetailPage';
 
 
 const App = () => {
@@ -66,7 +22,7 @@ const App = () => {
 
   return (
     <>
-    {/* <Navbar/>
+      {/* 
     <Routes>
     <Route  path="/" element={<Home/>}></Route>
     <Route  path="/login" element={<Login/>}></Route>
@@ -82,18 +38,15 @@ const App = () => {
 <Header openSidebar={toggleSidebar}/>  
 
 <Routes> 
-
+  
    <Route path="/ProductPage1" element={<ProductPageZara />}/> 
    <Route path="/HomePage" element={<FullPageExample  />}/> 
    <Route path="/LinenPage" element={<LinenPage  />}/> 
    <Route path="/PoloPage" element={<PoloShirt  />}/> 
+   <Route path='/Polo_shirt/:id' element={<DetailPage/>}/>
     </Routes>  
     
 <Sidebar sidebar={sidebar}/>
-
-
-
-
 
     </>
   );

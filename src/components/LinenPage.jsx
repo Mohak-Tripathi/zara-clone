@@ -12,7 +12,7 @@ LineneProduct()
 
 const LineneProduct = async()=>{
 
-    const data= await fetch("http://localhost:8890/Linen_data")
+    const data= await fetch("http://localhost:8080/Linen_data")
 
     const res = await data.json()
 
