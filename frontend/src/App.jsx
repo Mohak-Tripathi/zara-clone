@@ -18,7 +18,6 @@ import Payment from './components/Payment';
 import DetailPage from './components/DetailPage';
 import Cart from './components/cart/Cart';
 
-
 const App = () => {
   
   const[sidebar, setSidebar] = useState(false)
@@ -44,6 +43,8 @@ const App = () => {
    <Route path='/cart' element={<Cart/>} />
    <Route path='/Payment' element={<Payment/>}/>
    <Route path='/CardPayment' element={<CardPayment/>}/>
+   <Route path='/product/:id' element={<DetailPage/>}/>
+   <Route path='/Linen_data/:id' element={<DetailPage/>}/>
    </Routes>  
    <Sidebar sidebar={sidebar}/>
     </>

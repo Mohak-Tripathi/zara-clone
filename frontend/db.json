@@ -1,22 +1,29 @@
 {
   "cart": [
     {
+      "image": "https://static.zara.net/photos///2022/V/0/1/p/1063/407/620/4/w/750/1063407620_1_1_1.jpg?ts=1648141096831",
+      "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
+      "name": "STRIPED SHIRT",
+      "price": "2,990.00",
+      "id": "806",
+      "cat": "men"
+    },
+    {
+      "image": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/371/1063035711_2_1_1.jpg?ts=1648724945307",
+      "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
+      "name": "STRIPED SHIRT",
+      "price": "2,990.00",
+      "id": "801",
+      "cat": "men"
+    },
+    {
       "id": 203,
       "image": "https://static.zara.net/photos///2022/V/0/2/p/9240/455/250/2/w/270/9240455250_2_4_1.jpg?ts=1644569477611",
       "name": "TEXTURED PIQUÉ POLO SHIRT",
       "price": "1890"
     },
     {
-      "id": 211,
-      "image": "https://static.zara.net/photos///2022/V/0/2/p/3182/403/250/2/w/270/3182403250_2_1_1.jpg?ts=1650621596921",
-      "name": "COTTON POLO SHIRT",
-      "price": "2590"
-    },
-    {
-      "id": 207,
-      "image": "https://static.zara.net/photos///2022/V/0/2/p/9240/450/250/2/w/270/9240450250_1_1_1.jpg?ts=1644402303980",
-      "name": "TEXTURED PIQUÉ POLO SHIRT",
-      "price": "1890"
+      "id": "o2X_HtM"
     }
   ],
   "product": [
