@@ -12,9 +12,9 @@ function Sidebar({sidebar}) {
        
 
        
-       <div>WOMEN</div>
-       <div>MAN</div>
-       <div>KIDS</div>
+       <div className='section_tri'> WOMEN</div>
+       <div className='section_tri'>MAN</div>
+       <div className='section_tri'>KIDS</div>
 
        </div>    
 

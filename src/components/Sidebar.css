@@ -5,8 +5,8 @@
     left: 0;
     height: 100vh;
     width: 450px;
-    transform: translate(-100%);
-    transition: all 0.4s
+    transform: translateX(-100%);
+    transition: all 0.4s;
 }
 
 .sidebar li{
@@ -15,25 +15,21 @@
     font-size: 12px;
     list-style: none;
     margin-left: 10px;
-    text-decoration: inherit;
-  
-
+    text-decoration: none;
 letter-spacing: 0.4px;
 
 margin-left:40px;
 
 padding:1px;
 font-style:normal;
-text-transform:
-uppercase;
-text-decoration:
-none solid rgb(0, 0, 0);
+text-transform: uppercase;
+text-decoration: none solid rgb(0, 0, 0);
 text-align:left;
 
 }
 
 .sidebar--open{
-    transform: translate(0%);
+    transform: translateX(0%);
 }
 
 .Categroy--tripathi{
@@ -58,4 +54,9 @@ color: darkcyan;
     margin-left: 35px;
     margin-top: 5px; 
     margin-bottom: 5px;
+}
+
+.section_tri:hover{
+color: black;
+font-weight: bolder;
 }
