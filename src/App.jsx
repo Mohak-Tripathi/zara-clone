@@ -8,6 +8,8 @@ import './App.css';
 import ProductPageZara from './components/ProductPageZara';
 import LinenPage from './components/LinenPage';
 import DetailPage from './components/DetailPage';
+import CardPayment from './components/card/CardPayment';
+import Payment from './components/Payment/Payment';
 
 
 const App = () => {
@@ -22,18 +24,7 @@ const App = () => {
 
   return (
     <>
-      {/* 
-    <Routes>
-    <Route  path="/" element={<Home/>}></Route>
-    <Route  path="/login" element={<Login/>}></Route>
-    <Route  path="/signup" element={<Signup/>}></Route>
-    </Routes>
-    {/* <Routes>
 
-    </Routes>
-    
-    <Route exact path="/"><Contact/></Route>
-    <Route exact path="/"><Home/></Route> */}
 
 <Header openSidebar={toggleSidebar}/>  
 
@@ -44,6 +35,8 @@ const App = () => {
    <Route path="/LinenPage" element={<LinenPage  />}/> 
    <Route path="/PoloPage" element={<PoloShirt  />}/> 
    <Route path='/Polo_shirt/:id' element={<DetailPage/>}/>
+   <Route path='/Payment' element={<Payment/>}/>
+     <Route path='/CardPayment' element={<CardPayment/>}/>
     </Routes>  
     
 <Sidebar sidebar={sidebar}/>
