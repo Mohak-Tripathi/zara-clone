@@ -14,9 +14,9 @@ const nav=useNavigate()
     const {name,value}=e.target
     setformdata({
         ...formdata,
-         [name]:value
+         [name]:value,
     })
-    
+
   }
   // console.log(formdata)
 
