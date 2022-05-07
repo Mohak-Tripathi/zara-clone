@@ -3,29 +3,36 @@ import React, { useEffect } from 'react'
 import {useState} from "react"
 import { Link } from 'react-router-dom'
 import "./PoloShirt.css"
+import axios from 'axios'
+
 
 function PoloShirt() {
   
     const [polo, setPolo]= useState([])
 
-    useEffect(()=>{
+    // useEffect(()=>{
 
-        getdatapolo()
+    //     getdatapolo()
 
-    },[])
+    // },[])
 
-    const getdatapolo= async()=>{
+    // const getdatapolo= async()=>{
         
 
-        const data= await fetch("http://localhost:8080/Polo_shirt")
+    //     const data= await fetch("http://localhost:8080/Polo_shirt")
 
-    const res = await data.json()
+    // const res = await data.json()
 
-    console.log(res)
-    setPolo(res)
-    }
+    // console.log(res)
+    // setPolo(res)
+    // }
   
-  
+    useEffect(() => {
+        axios.get(`http://localhost:8080/Polo_shirt`)
+       .then((res)=>{
+         setPolo(res.data)
+         console.log(res.data)
+       })}, [])
     return (
 
 

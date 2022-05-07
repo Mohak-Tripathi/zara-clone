@@ -35,8 +35,12 @@ const App = () => {
    <Route path="/LinenPage" element={<LinenPage  />}/> 
    <Route path="/PoloPage" element={<PoloShirt  />}/> 
    <Route path='/Polo_shirt/:id' element={<DetailPage/>}/>
+<<<<<<< HEAD
    <Route path='/Payment' element={<Payment/>}/>
      <Route path='/CardPayment' element={<CardPayment/>}/>
+=======
+   <Route path="/" element={<FullPageExample/>}/>
+>>>>>>> 7416a9505ad0a20c8f6193db742984f173a7a259
     </Routes>  
     
 <Sidebar sidebar={sidebar}/>
