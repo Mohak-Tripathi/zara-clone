@@ -44,6 +44,7 @@ const App = () => {
    <Route path="/LinenPage" element={<LinenPage  />}/> 
    <Route path="/PoloPage" element={<PoloShirt  />}/> 
    <Route path='/Polo_shirt/:id' element={<DetailPage/>}/>
+   <Route path="/" element={<FullPageExample/>}/>
     </Routes>  
     
 <Sidebar sidebar={sidebar}/>
