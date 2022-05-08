@@ -27,6 +27,7 @@ function Header({openSidebar}) {
 <img src="https://www.zara.com/in/en/shop/cart" alt='' /> 
 
 {/* cart div  */}
+
       <div><Link to='/cart'>{cartCount}</Link></div>
 </div>
 </div> 
