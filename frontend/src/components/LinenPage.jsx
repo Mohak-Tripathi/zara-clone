@@ -1,49 +1,62 @@
-import React, { useEffect, useState } from 'react'
-import "./LinenPage.css"
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./LinenPage.css";
 
 function LinenPage() {
-  const [Linen, setLinen] = useState([])
-  
+  const [Linen, setLinen] = useState([]);
 
-useEffect(()=>{
+  useEffect(() => {
+    LineneProduct();
+  }, []);
 
-LineneProduct()
-},[])
+  const LineneProduct = async () => {
+    const data = await fetch("http://localhost:8080/Linen_data");
 
-const LineneProduct = async()=>{
+    const res = await data.json();
 
-    const data= await fetch("http://localhost:8080/Linen_data")
+    console.log(res);
+    setLinen(res);
+  };
 
-    const res = await data.json()
+  return (
+    <div className="Main_linen_tri">
+      <div className="render_data_Linen">
+        {Linen.map((elem) => (
+          <Link to={`/Linen_data/${elem.id}`}>
+            <div key={elem.id}>
+              <div>
+                <img className="Linen_image" src={elem.image} alt="" />
 
-    console.log(res)
-    setLinen(res)
+                <div className="span_div">
+                  <span>{elem.name} </span>
+                  <br />
+                  <span>
+                    <span>₹ </span>
+                    {elem.price}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+  //         <div className='Main_linen_tri'>
+
+  //  <div className='render_data_Linen'>
+  // {Linen.map((elem)=>(
+  //     <Link to={`/Linen_data/${elem.id}`}>
+  //       <div key={elem.id}>
+  //             <img className="Linen_image" src={elem.image} alt="" />
+  //             <span>{elem.name} </span>
+  //             <span>{elem.price} </span>
+  //       </div>
+  //       </Link>
+  // ))}
+  //     </div>
+  //     </div>
+  // )
 }
 
-
-    return (
-
-        <div className='Main_linen_tri'>  
-
-
-    <div className='render_data_Linen'>
-{Linen.map((elem)=>(
-<div>
-
-<img className="Linen_image" src={elem.image} alt="" />
-
-
-<span>{elem.name} </span>
-<span>{elem.price} </span>
-</div> 
-
-))}
-
-
-
-    </div>
-    </div>
-  )
-}
-
-export default LinenPage
+export default LinenPage;

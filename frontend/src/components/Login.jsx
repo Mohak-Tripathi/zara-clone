@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Login.css'
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../CartContext/AuthContext';
 
-const Login = () => {
+const Login = ({log}) => {
 const nav=useNavigate()
+// const location=useLocation();
+// const {from} =location.state
  const [formdata,setformdata]=useState({})
-    
+ const {Auth,setAuth}=useContext(AuthContext);
   const handlechange=(e)=>{
-    
    //  console.log(e.target.value)
     const {name,value}=e.target
     setformdata({
@@ -19,19 +21,17 @@ const nav=useNavigate()
 
   }
   // console.log(formdata)
-
-
   async function onsubmit(e){
 
     e.preventDefault()
-    window.location.href="home.js"
+  
     // console.log(formdata);
 
   // savedata()
 
   try {
   
-    let res=await fetch("http://localhost:8080/login",
+    let res=await fetch("http://localhost:8000/login",
     {
         method:"POST",
         body: JSON.stringify(formdata),
@@ -44,26 +44,24 @@ const nav=useNavigate()
 
       let data=await res.json()
      console.log(data)
-
     console.log(data.token)
-
     if(data.status)
     {
    localStorage.setItem("userdata",JSON.stringify(data.user))
    localStorage.setItem("token",data.token)
- 
-nav("/home")
-    }
-    
+   nav("/Home");
+   setAuth(true);
+   log(data.user.name);
 
-   else{
+     console.log("userdata",data.user)
+    }
+  else{
     alert(data.message)
  
     }
 
-
 } catch (error) {
-    console.log(error)
+    console.log(error);
     
 }
    
@@ -92,7 +90,7 @@ nav("/home")
   </div>
   
   <a className="forgotpassword"href='#'>HAVE YOU FORGOTTEN YOUR PASSWORD?</a>
-  <button type="submit" className="signupbtn" >LOGIN </button>
+  <button type="submit" className="login-btn" >LOGIN </button>
   </div>
  
 <div className='right-login-form'>
@@ -106,7 +104,7 @@ nav("/home")
   
 </form>
 
-<div className='signup-header'>
+<div className='signup-footer'>
 <div className="list-group">
 <h6 className='header-heading'>HELP</h6>
   <a href="#" className="list ">SHOP AT ZARA.COM</a>

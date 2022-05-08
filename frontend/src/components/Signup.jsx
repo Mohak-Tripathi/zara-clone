@@ -30,7 +30,7 @@ const nav=useNavigate()
 
   try {
   
-    let res=await fetch("http://localhost:8080/register",
+    let res=await fetch("http://localhost:8000/register",
     {
         method:"POST",
         body: JSON.stringify(formdata),
