@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "./Navbar.css"
-import { Link } from 'react-router-dom'
-const Navbar = () => {
- 
+import { Link, useNavigate } from 'react-router-dom'
+import { AuthContext } from '../CartContext/AuthContext';
+const Navbar = ({name}) => {
+ const {Auth,setAuth}=useContext(AuthContext);
+ const navigate=useNavigate()
   return (
       <>
     
@@ -79,13 +81,20 @@ const Navbar = () => {
     <div className='nav-right'>
          <div className='right'>
     <input placeholder='Search' className='nav-search'></input>
-    <button className="btn-1 " type="button">Login</button>
+    <button className="btn-1 " type="button">
+     
+  {!Auth?<Link to="/login">Login</Link>:
+  <div style={{
+                width:"fitContent",
+                backgroundColor:"white",
+                color:"black", border:"none"
+                }}>
+  <span>Hii !! {name}</span></div> } 
+    </button>
     <button  className="btn-1 " type="button">Help</button>
      <button className="btn-1 " type="button">CART</button>
         </div>
     </div>
-
-
 
 </div>
 

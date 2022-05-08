@@ -1,13 +1,8 @@
 
 import { Route, Routes } from 'react-router-dom';
 import PoloShirt from "./components/PoloShirt"
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
-import FullPageExample from './components/LandingPage';
-
-import { Route, Routes } from 'react-router-dom';
-import PoloShirt from "./components/PoloShirt"
-// import React, { useState } from 'react';
 import './App.css';
 import ProductPageZara from './components/ProductPageZara';
 import LinenPage from './components/LinenPage';
@@ -15,15 +10,20 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import CardPayment from './components/CardPayment';
 import Payment from './components/Payment';
-
+import DetailPage from './components/DetailPage'
 import Home from './components/Home';
 import Logout from './components/logout/Logout';
+import Cart from './components/cart/Cart'
+import { set } from 'mongoose';
 
 const App = () => {
-  
+const [name,setName]=useState('');
+const log =(e)=>{
+  setName(e)
+}
 return(
   <>
-<Navbar/>
+<Navbar name={name}/>
 {/* import DetailPage from './components/DetailPage';
 import Cart from './components/cart/Cart';
 import Home from './components/Home';
