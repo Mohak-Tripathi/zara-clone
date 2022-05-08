@@ -1,7 +1,10 @@
 import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import { CartContext } from '../../CartContext/CartContext';
+import CardPayment from '../CardPayment';
 import '../Detail.css';
+import Payment from '../Payment';
 function Cart() {
     const [cartData,setCartData]=useState([]);
     const {cartCount,setCartCount}=useContext(CartContext);
@@ -40,7 +43,7 @@ function Cart() {
             </div> 
       )}
     </div>
-      
+  <Link to={'/payment'}><button>Continue to Payment</button></Link>
     </>
   )
 }

@@ -53,7 +53,6 @@ function DetailPage() {
             <button onClick={(e)=>handleProduct(user)}>Add to Cart</button>
             </div>                  
         }
-     
     </div>
     </div>
     </>

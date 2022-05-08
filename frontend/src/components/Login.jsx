@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Login.css'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../CartContext/AuthContext';
 
 const Login = () => {
 const nav=useNavigate()
  const [formdata,setformdata]=useState({})
-    
+ const {Auth,setAuth}=useContext(AuthContext);
   const handlechange=(e)=>{
     
    //  console.log(e.target.value)
@@ -19,8 +20,6 @@ const nav=useNavigate()
 
   }
   // console.log(formdata)
-
-
   async function onsubmit(e){
 
     e.preventDefault()

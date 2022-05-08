@@ -1,7 +1,3 @@
-
-
-
-
 import FullPageExample from './components/LandingPage';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
@@ -45,6 +41,8 @@ const App = () => {
    <Route path='/CardPayment' element={<CardPayment/>}/>
    <Route path='/product/:id' element={<DetailPage/>}/>
    <Route path='/Linen_data/:id' element={<DetailPage/>}/>
+   <Route path='/cardpayment' element={<CardPayment/>}/>
+   <Route path='/payment' element={<Payment/>}/>
    </Routes>  
    <Sidebar sidebar={sidebar}/>
     </>
