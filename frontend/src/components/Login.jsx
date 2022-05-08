@@ -1,12 +1,14 @@
 import React, { useContext } from 'react';
 import './Login.css'
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../CartContext/AuthContext';
 
-const Login = () => {
+const Login = ({log}) => {
 const nav=useNavigate()
+// const location=useLocation();
+// const {from} =location.state
  const [formdata,setformdata]=useState({})
  const {Auth,setAuth}=useContext(AuthContext);
   const handlechange=(e)=>{
@@ -47,8 +49,11 @@ const nav=useNavigate()
     {
    localStorage.setItem("userdata",JSON.stringify(data.user))
    localStorage.setItem("token",data.token)
-   nav("/Home")
-   console.log("userdata",data.user)
+   nav("/Home");
+   setAuth(true);
+   log(data.user.name);
+
+     console.log("userdata",data.user)
     }
   else{
     alert(data.message)

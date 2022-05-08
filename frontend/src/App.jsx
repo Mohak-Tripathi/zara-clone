@@ -18,25 +18,28 @@ import Home from './components/Home';
 const App = () => {
   
   const[sidebar, setSidebar] = useState(false)
-
+  const [name,setName]=useState('')
   const toggleSidebar = () =>{
     setSidebar((prevState) =>  !prevState) 
     
   }
-
+  const log =(e)=>{
+    console.log("username is",e)
+    setName(e)
+  }
   return (
     <>
    
 
-<Header openSidebar={toggleSidebar}/>  
+<Header openSidebar={toggleSidebar} name={name}/>  
 <Routes> 
    <Route path='/' element={<Home/>}/>
    <Route path="/ProductPage1" element={<ProductPageZara />}/> 
-   <Route path="/HomePage" element={<FullPageExample  />}/> 
+   <Route path="/Home" element={<Home/>}/> 
    <Route path="/LinenPage" element={<LinenPage  />}/> 
    <Route path="/PoloPage" element={<PoloShirt  />}/>
    <Route path='/Polo_Shirt/:id' element={<DetailPage/>}/>
-   <Route path="/login" element={<Login/>}/>
+   <Route path="/login" element={<Login log={log}/>}/>
    <Route path="/signup" element={<Signup/>}/>
    <Route path='/cart' element={<Cart/>} />
    <Route path='/Payment' element={<Payment/>}/>

@@ -1,13 +1,16 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../CartContext/AuthContext';
 import { CartContext } from '../CartContext/CartContext'
 import "./Header.css"
 
-function Header({openSidebar}) {
+function Header({openSidebar,name}) {
+
   // const navi=useNavigate()
     const {cartCount}=useContext(CartContext);
     const {Auth,setAuth}=useContext(AuthContext);
+// console.log("here we needed",name)
+   
     return (
         <>
 <div className="Navbar_Tripathi">  
@@ -20,7 +23,12 @@ function Header({openSidebar}) {
  
 
 <div> 
-  {!Auth?<Link to="/login">Login</Link>:""}
+  {!Auth?<Link to="/login">Login</Link>:<button style={{
+    width:"fitContent",
+    backgroundColor:"white",
+    color:"black", border:"none"
+    }}>
+    {name} </button>}
 </div>
 <div> HELP </div>
 <img src="https://www.zara.com/in/en/shop/cart" alt='' /> 
