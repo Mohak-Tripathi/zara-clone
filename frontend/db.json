@@ -1,5 +1,14 @@
 {
-  "cart": [],
+  "cart": [
+    {
+      "image": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/371/1063035711_2_1_1.jpg?ts=1648724945307",
+      "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
+      "name": "STRIPED SHIRT",
+      "price": "2,990.00",
+      "id": "801",
+      "cat": "men"
+    }
+  ],
   "product": [
     {
       "id": 101,
@@ -253,7 +262,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/750/1063035711_1_1_1.jpg?ts=1648724945973",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "STRIPED SHIRT",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "800",
       "cat": "men"
     },
@@ -261,7 +270,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/371/1063035711_2_1_1.jpg?ts=1648724945307",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "STRIPED SHIRT",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "801",
       "cat": "men"
     },
@@ -269,7 +278,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/2/p/4310/859/420/2/w/312/4310859420_2_4_1.jpg?ts=1648116157310",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "STRIPED SHIRT",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "802",
       "cat": "men"
     },
@@ -277,7 +286,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/2/p/1063/034/710/2/w/750/1063034710_6_1_1.jpg?ts=1648724590667",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "STRIPED SHIRT",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "803",
       "cat": "men"
     },
@@ -285,7 +294,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/1/p/7545/211/712/2/w/750/7545211712_1_1_1.jpg?ts=1650297379300",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "STRIPED SHIRT",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "804",
       "cat": "men"
     },
@@ -293,7 +302,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/750/1063035711_1_1_1.jpg?ts=1648724945973",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "STRIPED SHIRT",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "805",
       "cat": "men"
     },
@@ -301,7 +310,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/1/p/1063/407/620/4/w/750/1063407620_1_1_1.jpg?ts=1648141096831",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "STRIPED SHIRT",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "806",
       "cat": "men"
     },
@@ -309,7 +318,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/2/p/1063/407/500/2/w/750/1063407500_2_1_1.jpg?ts=1642421895539",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "STRIPED SHIRT",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "807",
       "cat": "men"
     },
@@ -317,7 +326,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/2/p/2675/409/710/2/w/750/2675409710_2_5_1.jpg?ts=1648806739723",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "STRIPED SHIRT",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "808",
       "cat": "men"
     },
@@ -325,7 +334,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/2/p/4085/474/800/2/w/750/4085474800_2_1_1.jpg?ts=1644944145830",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "STRIPED SHIRT",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "809",
       "cat": "men"
     },
@@ -333,7 +342,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/1/p/8574/435/052/6/w/750/8574435052_1_1_1.jpg?ts=1648141497642",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "STRIPED SHIRT",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "810",
       "cat": "men"
     },
@@ -341,7 +350,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/2/p/8574/432/250/2/w/750/8574432250_1_1_1.jpg?ts=1647601084045",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "STRIPED SHIRT",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "811",
       "cat": "men"
     },
@@ -349,7 +358,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/2/p/4310/859/420/2/w/750/4310859420_1_1_1.jpg?ts=1648116144124",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "STRIPED SHIRT",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "812",
       "cat": "men"
     },
@@ -357,7 +366,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/2/p/8211/404/052/2/w/750/8211404052_2_5_1.jpg?ts=1647359010398",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "COTTON - LINEN SHIRT",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "813",
       "cat": "men"
     },
@@ -365,7 +374,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/2/p/2675/409/710/2/w/312/2675409710_2_1_1.jpg?ts=1648800371002",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "STRIPED COTTON/LINEN BLEND SHIRT",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "814",
       "cat": "men"
     },
@@ -373,7 +382,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/2/p/6861/555/505/2/w/750/6861555505_2_1_1.jpg?ts=1648211645635",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "COTTON - LINEN TROUSERS",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "815",
       "cat": "men"
     },
@@ -381,7 +390,7 @@
       "image": "https://static.zara.net/photos///2022/V/0/2/p/4489/965/500/2/w/750/4489965500_2_4_1.jpg?ts=1650450161668",
       "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
       "name": "COTTON - LINEN TROUSERS",
-      "price": "2,990.00",
+      "price": "2990.00",
       "id": "816",
       "cat": "men"
     }
@@ -646,8 +655,7 @@
       "price": "2890"
     }
   ],
-  
-  "WomenData" : [
+  "WomenData": [
     {
       "id": 501,
       "image": "https://static.zara.net/photos///2022/V/0/1/p/9878/117/070/12/w/314/9878117070_2_1_1.jpg?ts=1651841713202",
@@ -877,245 +885,252 @@
       "price": "7990"
     }
   ],
-
-  "KidsData" : [
+  "KidsData": [
     {
-        "id":551,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/5350/578/402/2/w/294/5350578402_6_1_1.jpg?ts=1651148417779",
-        "name":"FLORAL T-SHIRT WITH PIPING",
-        "price":"990.00"
+      "id": 551,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/5350/578/402/2/w/294/5350578402_6_1_1.jpg?ts=1651148417779",
+      "name": "FLORAL T-SHIRT WITH PIPING",
+      "price": "990.00"
     },
     {
-        "id":552,
-        "image":"https://static.zara.net/photos///2022/I/0/3/p/2756/552/712/2/w/294/2756552712_6_1_1.jpg?ts=1651148643396",
-        "name":"FLORAL CROCHET KNIT TOP",
-        "price":"1590.00"
+      "id": 552,
+      "image": "https://static.zara.net/photos///2022/I/0/3/p/2756/552/712/2/w/294/2756552712_6_1_1.jpg?ts=1651148643396",
+      "name": "FLORAL CROCHET KNIT TOP",
+      "price": "1590.00"
     },
     {
-        "id":553,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/5767/581/620/2/w/294/5767581620_6_1_1.jpg?ts=1651576049666",
-        "name":"FLORAL T-SHIRT WITH RUFFLES",
-        "price":"990.00"
-    }, {
-        "id":554,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/6061/657/630/2/w/292/6061657630_6_1_1.jpg?ts=1649775975144",
-        "name":"TWEETY LOONEY TUNES © &™ WARNER BROS T-SHIRT WITH KNOT",
-        "price":"990.00"
-    }, {
-        "id":555,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/6061/657/306/2/w/292/6061657306_6_1_1.jpg?ts=1649780588150",
-        "name":"TWEETY LOONEY TUNES © &™ WARNER BROS T-SHIRT WITH KNOT",
-        "price":"990.00"
-    }, {
-        "id":556,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1716/349/400/202/w/123/1716349400_15_1_1.jpg?ts=1650452609615",
-        "name":"ANIMAL T-SHIRT",
-        "price":"590.00"
-    }, {
-        "id":557,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1716/349/400/2/w/73/1716349400_6_1_1.jpg?ts=1649340457791",
-        "name":"ANIMAL T-SHIRT",
-        "price":"590.00"
+      "id": 553,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/5767/581/620/2/w/294/5767581620_6_1_1.jpg?ts=1651576049666",
+      "name": "FLORAL T-SHIRT WITH RUFFLES",
+      "price": "990.00"
     },
     {
-        "id":558,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1716/360/250/2/w/248/1716360250_6_1_1.jpg?ts=1649771495977",
-        "name":"PRINTED T-SHIRT",
-        "price":"550.00"
-    }, {
-        "id":559,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1716/362/620/2/w/194/1716362620_6_1_1.jpg?ts=1650629870222",
-        "name":"3-PACK OF PRINTED T-SHIRTS",
-        "price":"1,290.00"
-    }, {
-        "id":560,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1716/361/746/2/w/194/1716361746_6_1_1.jpg?ts=1650982730438",
-        "name":"3-PACK OF PLAIN T-SHIRTS",
-        "price":"1,090.00"
-    }, {
-        "id":561,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1716/361/926/2/w/194/1716361926_6_1_1.jpg?ts=1650982747114",
-        "name":"3-PACK OF PLAIN T-SHIRTS",
-        "price":"1,090.00"
-    }, {
-        "id":562,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/5643/589/250/2/w/292/5643589250_6_1_1.jpg?ts=1650463400450",
-        "name":"WATERMELON SWEATSHIRT",
-        "price":"1090.00"
+      "id": 554,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/6061/657/630/2/w/292/6061657630_6_1_1.jpg?ts=1649775975144",
+      "name": "TWEETY LOONEY TUNES © &™ WARNER BROS T-SHIRT WITH KNOT",
+      "price": "990.00"
     },
     {
-        "id":563,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/3037/515/527/2/w/292/3037515527_6_1_1.jpg?ts=1648139387292",
-        "name":"TIE-DYE ANIME HOODIE",
-        "price":"1590.00"
+      "id": 555,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/6061/657/306/2/w/292/6061657306_6_1_1.jpg?ts=1649780588150",
+      "name": "TWEETY LOONEY TUNES © &™ WARNER BROS T-SHIRT WITH KNOT",
+      "price": "990.00"
     },
     {
-        "id":564,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/2211/544/400/2/w/292/2211544400_6_1_1.jpg?ts=1646037249896",
-        "name":"STRIPED SWEATSHIRT WITH RUFFLE TRIMS",
-        "price":"1590.00"
+      "id": 556,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1716/349/400/202/w/123/1716349400_15_1_1.jpg?ts=1650452609615",
+      "name": "ANIMAL T-SHIRT",
+      "price": "590.00"
     },
     {
-        "id":565,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/2211/547/600/2/w/292/2211547600_6_1_1.jpg?ts=1646306794964",
-        "name":"STRIPED SWEATSHIRT WITH SLOGAN",
-        "price":"1490.00"
+      "id": 557,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1716/349/400/2/w/73/1716349400_6_1_1.jpg?ts=1649340457791",
+      "name": "ANIMAL T-SHIRT",
+      "price": "590.00"
     },
     {
-        "id":566,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/0061/518/633/2/w/294/0061518633_6_1_1.jpg?ts=1644247028858",
-        "name":"MINNIE MOUSE ©DISNEY WAFFLE-KNIT JOGGING SET",
-        "price":"2290.00"
+      "id": 558,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1716/360/250/2/w/248/1716360250_6_1_1.jpg?ts=1649771495977",
+      "name": "PRINTED T-SHIRT",
+      "price": "550.00"
     },
     {
-        "id":567,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/6224/563/401/2/w/294/6224563401_6_1_1.jpg?ts=1643717005937",
-        "name":"MINNIE MOUSE © DISNEY SET",
-        "price":"1990.00"
+      "id": 559,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1716/362/620/2/w/194/1716362620_6_1_1.jpg?ts=1650629870222",
+      "name": "3-PACK OF PRINTED T-SHIRTS",
+      "price": "1290.00"
     },
     {
-        "id":568,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/4012/526/620/2/w/248/4012526620_6_1_1.jpg?ts=1645519956072",
-        "name":"CAMP AND FRIENDS HOODIE",
-        "price":"1590.00"
+      "id": 560,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1716/361/746/2/w/194/1716361746_6_1_1.jpg?ts=1650982730438",
+      "name": "3-PACK OF PLAIN T-SHIRTS",
+      "price": "1090.00"
     },
     {
-        "id":569,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/6050/535/526/2/w/248/6050535526_6_1_1.jpg?ts=1645519967932",
-        "name":"SKATE AND SUN HOODIE",
-        "price":"1490.00"
+      "id": 561,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1716/361/926/2/w/194/1716361926_6_1_1.jpg?ts=1650982747114",
+      "name": "3-PACK OF PLAIN T-SHIRTS",
+      "price": "1090.00"
     },
     {
-        "id":570,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/7200/502/400/203/w/444/7200502400_1_1_1.jpg?ts=1651226948252",
-        "name":"EMBROIDERED DENIM DRESS - LIMITED EDITION",
-        "price":"2290.00"
+      "id": 562,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/5643/589/250/2/w/292/5643589250_6_1_1.jpg?ts=1650463400450",
+      "name": "WATERMELON SWEATSHIRT",
+      "price": "1090.00"
     },
     {
-        "id":571,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/7200/502/400/2/w/444/7200502400_6_1_1.jpg?ts=1650551702838",
-        "name":"EMBROIDERED DENIM DRESS - LIMITED EDITION",
-        "price":"2290.00"
+      "id": 563,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/3037/515/527/2/w/292/3037515527_6_1_1.jpg?ts=1648139387292",
+      "name": "TIE-DYE ANIME HOODIE",
+      "price": "1590.00"
     },
     {
-        "id":572,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/2756/515/982/2/w/444/2756515982_6_1_1.jpg?ts=1650463400019",
-        "name":"CROCHET DRESS WITH EMBROIDERED FLOWERS",
-        "price":"1990.00"
+      "id": 564,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/2211/544/400/2/w/292/2211544400_6_1_1.jpg?ts=1646037249896",
+      "name": "STRIPED SWEATSHIRT WITH RUFFLE TRIMS",
+      "price": "1590.00"
     },
     {
-        "id":573,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/5770/509/620/202/w/444/5770509620_1_1_1.jpg?ts=1648628211876",
-        "name":"FLORAL SCHIFFLI EMBROIDERY DRESS",
-        "price":"1990.00"
+      "id": 565,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/2211/547/600/2/w/292/2211547600_6_1_1.jpg?ts=1646306794964",
+      "name": "STRIPED SWEATSHIRT WITH SLOGAN",
+      "price": "1490.00"
     },
     {
-        "id":574,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/5770/509/620/2/w/444/5770509620_6_1_1.jpg?ts=1648801459452",
-        "name":"FLORAL SCHIFFLI EMBROIDERY DRESS",
-        "price":"1990.00"
+      "id": 566,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/0061/518/633/2/w/294/0061518633_6_1_1.jpg?ts=1644247028858",
+      "name": "MINNIE MOUSE ©DISNEY WAFFLE-KNIT JOGGING SET",
+      "price": "2290.00"
     },
     {
-        "id":575,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1044/501/659/2/w/444/1044501659_6_1_1.jpg?ts=1650551667197",
-        "name":"RIBBED OPEN KNIT PLAYSUIT",
-        "price":"1090.00"
+      "id": 567,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/6224/563/401/2/w/294/6224563401_6_1_1.jpg?ts=1643717005937",
+      "name": "MINNIE MOUSE © DISNEY SET",
+      "price": "1990.00"
     },
     {
-        "id":576,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1044/501/640/2/w/444/1044501640_6_1_1.jpg?ts=1649676814150",
-        "name":"RIBBED OPEN KNIT PLAYSUIT",
-        "price":"1090.00"
+      "id": 568,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/4012/526/620/2/w/248/4012526620_6_1_1.jpg?ts=1645519956072",
+      "name": "CAMP AND FRIENDS HOODIE",
+      "price": "1590.00"
     },
     {
-        "id":577,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/2582/588/330/2/w/444/2582588330_6_1_1.jpg?ts=1650551729711",
-        "name":"STRIPED CROCHET PLAYSUIT WITH SCARF",
-        "price":"1990.00"
+      "id": 569,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/6050/535/526/2/w/248/6050535526_6_1_1.jpg?ts=1645519967932",
+      "name": "SKATE AND SUN HOODIE",
+      "price": "1490.00"
     },
     {
-        "id":578,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/4152/515/407/202/w/248/4152515407_1_1_1.jpg?ts=1649062847608",
-        "name":"FLORAL DUNGAREES",
-        "price":"1790.00"
+      "id": 570,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/7200/502/400/203/w/444/7200502400_1_1_1.jpg?ts=1651226948252",
+      "name": "EMBROIDERED DENIM DRESS - LIMITED EDITION",
+      "price": "2290.00"
     },
     {
-        "id":579,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1320/459/500/202/w/248/1320459500_1_1_1.jpg?ts=1648628212961",
-        "name":"CHECK SHIRT",
-        "price":"1590.00"
+      "id": 571,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/7200/502/400/2/w/444/7200502400_6_1_1.jpg?ts=1650551702838",
+      "name": "EMBROIDERED DENIM DRESS - LIMITED EDITION",
+      "price": "2290.00"
     },
     {
-        "id":580,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1320/459/500/2/w/248/1320459500_6_1_1.jpg?ts=1648565096234",
-        "name":"CHECK SHIRT",
-        "price":"1690.00"
+      "id": 572,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/2756/515/982/2/w/444/2756515982_6_1_1.jpg?ts=1650463400019",
+      "name": "CROCHET DRESS WITH EMBROIDERED FLOWERS",
+      "price": "1990.00"
     },
     {
-        "id":581,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1281/327/250/2/w/248/1281327250_6_1_1.jpg?ts=1650456554041",
-        "name":"POPLIN PANELLED DRESS",
-        "price":"1990.00"
+      "id": 573,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/5770/509/620/202/w/444/5770509620_1_1_1.jpg?ts=1648628211876",
+      "name": "FLORAL SCHIFFLI EMBROIDERY DRESS",
+      "price": "1990.00"
     },
     {
-        "id":582,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1608/008/250/2/w/248/1608008250_6_1_1.jpg?ts=1649333480103",
-        "name":"EMBROIDERED LACE DRESS",
-        "price":"2490.00"
+      "id": 574,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/5770/509/620/2/w/444/5770509620_6_1_1.jpg?ts=1648801459452",
+      "name": "FLORAL SCHIFFLI EMBROIDERY DRESS",
+      "price": "1990.00"
     },
     {
-        "id":583,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1311/476/629/202/w/248/1311476629_1_1_1.jpg?ts=1648628213137",
-        "name":"FLORAL TOP",
-        "price":"1490.00"
+      "id": 575,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1044/501/659/2/w/444/1044501659_6_1_1.jpg?ts=1650551667197",
+      "name": "RIBBED OPEN KNIT PLAYSUIT",
+      "price": "1090.00"
     },
     {
-        "id":584,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1311/476/629/2/w/248/1311476629_6_1_1.jpg?ts=1649866712503",
-        "name":"FLORAL TOP",
-        "price":"1490.00"
+      "id": 576,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1044/501/640/2/w/444/1044501640_6_1_1.jpg?ts=1649676814150",
+      "name": "RIBBED OPEN KNIT PLAYSUIT",
+      "price": "1090.00"
     },
     {
-        "id":585,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1608/006/250/202/w/444/1608006250_1_1_1.jpg?ts=1646994265159",
-        "name":"EMBROIDERED POPLIN SHIRT",
-        "price":"1590.00"
+      "id": 577,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/2582/588/330/2/w/444/2582588330_6_1_1.jpg?ts=1650551729711",
+      "name": "STRIPED CROCHET PLAYSUIT WITH SCARF",
+      "price": "1990.00"
     },
     {
-        "id":586,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1290/352/703/2/w/444/1290352703_6_1_1.jpg?ts=1648139398248",
-        "name":"EMBROIDERED SHIRT",
-        "price":"1590.00"
+      "id": 578,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/4152/515/407/202/w/248/4152515407_1_1_1.jpg?ts=1649062847608",
+      "name": "FLORAL DUNGAREES",
+      "price": "1790.00"
     },
     {
-        "id":587,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/2756/507/800/202/w/444/2756507800_1_1_1.jpg?ts=1646650932019",
-        "name":"EMBROIDERED KNIT DRESS",
-        "price":"1990.00"
+      "id": 579,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1320/459/500/202/w/248/1320459500_1_1_1.jpg?ts=1648628212961",
+      "name": "CHECK SHIRT",
+      "price": "1590.00"
     },
     {
-        "id":588,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/2756/507/800/2/w/444/2756507800_6_1_1.jpg?ts=1646306802033",
-        "name":"EMBROIDERED KNIT DRESS",
-        "price":"1990.00"
+      "id": 580,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1320/459/500/2/w/248/1320459500_6_1_1.jpg?ts=1648565096234",
+      "name": "CHECK SHIRT",
+      "price": "1690.00"
     },
     {
-        "id":589,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1338/379/251/2/w/444/1338379251_6_1_1.jpg?ts=1648484911897",
-        "name":"FLORAL POPLIN DRESS",
-        "price":"1990.00"
+      "id": 581,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1281/327/250/2/w/248/1281327250_6_1_1.jpg?ts=1650456554041",
+      "name": "POPLIN PANELLED DRESS",
+      "price": "1990.00"
     },
     {
-        "id":590,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/1608/012/515/2/w/248/1608012515_6_1_1.jpg?ts=1650456553667",
-        "name":"TEXTURED DRESS",
-        "price":"1990.00"
+      "id": 582,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1608/008/250/2/w/248/1608008250_6_1_1.jpg?ts=1649333480103",
+      "name": "EMBROIDERED LACE DRESS",
+      "price": "2490.00"
     },
     {
-        "id":591,
-        "image":"https://static.zara.net/photos///2022/V/0/3/p/6050/539/636/2/w/248/6050539636_6_1_1.jpg?ts=1646929212240",
-        "name":"SPECIAL FADED JUMPSUIT",
-        "price":"1590.00"
+      "id": 583,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1311/476/629/202/w/248/1311476629_1_1_1.jpg?ts=1648628213137",
+      "name": "FLORAL TOP",
+      "price": "1490.00"
+    },
+    {
+      "id": 584,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1311/476/629/2/w/248/1311476629_6_1_1.jpg?ts=1649866712503",
+      "name": "FLORAL TOP",
+      "price": "1490.00"
+    },
+    {
+      "id": 585,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1608/006/250/202/w/444/1608006250_1_1_1.jpg?ts=1646994265159",
+      "name": "EMBROIDERED POPLIN SHIRT",
+      "price": "1590.00"
+    },
+    {
+      "id": 586,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1290/352/703/2/w/444/1290352703_6_1_1.jpg?ts=1648139398248",
+      "name": "EMBROIDERED SHIRT",
+      "price": "1590.00"
+    },
+    {
+      "id": 587,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/2756/507/800/202/w/444/2756507800_1_1_1.jpg?ts=1646650932019",
+      "name": "EMBROIDERED KNIT DRESS",
+      "price": "1990.00"
+    },
+    {
+      "id": 588,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/2756/507/800/2/w/444/2756507800_6_1_1.jpg?ts=1646306802033",
+      "name": "EMBROIDERED KNIT DRESS",
+      "price": "1990.00"
+    },
+    {
+      "id": 589,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1338/379/251/2/w/444/1338379251_6_1_1.jpg?ts=1648484911897",
+      "name": "FLORAL POPLIN DRESS",
+      "price": "1990.00"
+    },
+    {
+      "id": 590,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/1608/012/515/2/w/248/1608012515_6_1_1.jpg?ts=1650456553667",
+      "name": "TEXTURED DRESS",
+      "price": "1990.00"
+    },
+    {
+      "id": 591,
+      "image": "https://static.zara.net/photos///2022/V/0/3/p/6050/539/636/2/w/248/6050539636_6_1_1.jpg?ts=1646929212240",
+      "name": "SPECIAL FADED JUMPSUIT",
+      "price": "1590.00"
     }
   ]
 }

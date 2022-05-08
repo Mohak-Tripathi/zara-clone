@@ -34,7 +34,7 @@ function DetailPage() {
             console.log("aftere clicck",user)
                 axios.post(`http://localhost:8080/cart`,user);
                 setCartCount(cartCount + 1);
-                setTotal(total + user.price);
+                setTotal((prev)=>prev + Number((user.price)));
               }
   return (
     <>

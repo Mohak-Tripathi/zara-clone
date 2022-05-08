@@ -26,7 +26,7 @@ function Cart() {
         //  console.log(user)
         if(cartCount>0){
           setCartCount(cartCount-1)
-          setTotal((prev)=>prev-user.price);
+          setTotal((prev)=> prev - Number((user.price)));
         }
         axios.delete(`http://localhost:8080/cart/${user.id}`)
         .then((res)=>{console.log("afterdelete",res); cartItems();})
