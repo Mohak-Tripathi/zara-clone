@@ -20,8 +20,6 @@ const Navbar = ({name}) => {
     <button className="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">☰</button>
     
 </div>
-    
-
 <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
   <div class="offcanvas-header">
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -75,12 +73,8 @@ const Navbar = ({name}) => {
     height="100%"
      src="https://cdn.cookielaw.org/logos/5435e8e3-1f77-4efd-bb7e-591b5a6e876e/d7899571-c1e4-4d71-8e87-09246e838e5d/d5b1d450-62b7-4f62-94ba-f9835c6495ed/Standard.png" alt="title" /></Link>
     </div>   
-
     </div>
-    
-
-
-    <div className='nav-right'>
+     <div className='nav-right'>
          <div className='right'>
     <input placeholder='Search' className='nav-search'></input>
     <button className="btn-1 " type="button">
@@ -103,8 +97,7 @@ const Navbar = ({name}) => {
      onClick={()=>navigate('/login')}
      >CART</button>}
         </div>
-    </div>
-
+    </div >
 </div>
 
 

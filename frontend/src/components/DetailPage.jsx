@@ -6,7 +6,8 @@ import './Detail.css'
 function DetailPage() {
     const {id} =useParams();
     const [user,setUser]=useState({})
-    const {cartCount,setCartCount}=useContext(CartContext)
+    const {cartCount,setCartCount,total,setTotal}=useContext(CartContext);
+    // const {total,setTotal}=useContext()
 
     useEffect(() => {
         axios.get(`http://localhost:8080/Polo_shirt/${id}`)
@@ -32,9 +33,8 @@ function DetailPage() {
        const handleProduct=(user)=>{
             console.log("aftere clicck",user)
                 axios.post(`http://localhost:8080/cart`,user);
-            
-                setCartCount(cartCount + 1)
-              
+                setCartCount(cartCount + 1);
+                setTotal(total + user.price);
               }
   return (
     <>
