@@ -89,12 +89,12 @@
     font-size: 98%;
     color: black;
   }
-  .signup-header{
+  .signup-footer{
     display: flex;
     width: 40%;
     /* border: 1px solid black; */
     justify-content: space-between;
-    margin: 4%;
+    margin: 8%;
   }
   .list{
   text-decoration: none;

@@ -1,0 +1,59 @@
+.d-block{
+    margin:auto;
+    width: 60%;
+    height: 60%;
+    margin-top: -10px;
+}
+
+.third{
+    margin-top: 30%;
+    color: black;
+    border: 1px solid black;
+}
+.third1{
+    margin-left: 190px;
+    margin-bottom: -200px;
+    color: black;
+    border: 1px solid red;
+}
+.carosal-container{
+    border: 1px solid blue;
+    height: 100%;
+}
+.carosal-container-item{
+border: 1px solid yellow;
+height: 50%;
+}
+.e-block{
+    width: 50%;
+    margin-top: 30%;
+}
+.bottom-nav{
+    margin: auto;
+    width: 30%;
+    margin-top: 2%;
+
+    justify-content: space-between;
+ display: flex;
+ color: gray;
+
+
+}
+.bottom-nav-a{
+    color: gray;
+    text-decoration: none;
+    font-size: 73%;
+}
+
+.carousel-control-prev{
+  
+   color: red;
+
+}
+.carousel-control-prev-icon{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGdTIFX8Uk970jl_qUR5vCsnSzK4z5PLFw9IQWdpqL4LAxB-EfhDpkf4ZMOJ5VqX_IHsM&usqp=CAU");
+}
+
+.carousel-control-next-icon{
+    background-image: url("https://icons-for-free.com/iconfiles/png/512/direction+previous+right+icon-1320185004249034394.png");
+}

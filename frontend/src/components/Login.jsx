@@ -92,7 +92,7 @@ nav("/home")
   </div>
   
   <a className="forgotpassword"href='#'>HAVE YOU FORGOTTEN YOUR PASSWORD?</a>
-  <button type="submit" className="signupbtn" >LOGIN </button>
+  <button type="submit" className="login-btn" >LOGIN </button>
   </div>
  
 <div className='right-login-form'>
@@ -106,7 +106,7 @@ nav("/home")
   
 </form>
 
-<div className='signup-header'>
+<div className='signup-footer'>
 <div className="list-group">
 <h6 className='header-heading'>HELP</h6>
   <a href="#" className="list ">SHOP AT ZARA.COM</a>

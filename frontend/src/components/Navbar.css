@@ -1,0 +1,66 @@
+
+.Nav-container{
+    display: flex;
+ 
+    height: 13vh;
+    justify-content: space-between;
+}
+.nav-left{
+    display: flex;
+ 
+}
+
+.btn-1{
+    width: auto;
+    font-size: 71%;
+    background-color:white;
+    color: black;
+
+}
+.btn{
+    width: 5%;
+
+    
+}
+.first-nav-btn{
+   width: 3%;
+   height: 9%;
+}
+.logo-nav{
+    margin-top: 10%;
+    width: 100%;
+}
+
+.offcanvas-start{
+    margin-top: 6%;
+    width: 20%;
+    border-radius: 2%;
+ 
+}
+.inner-slide-btn{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+    font-size: 80%;
+    text-decoration: none;
+}
+.inner-slide-link-btn{
+    text-decoration: none;
+    color: gray;
+}
+.inner-slide-btn:hover{
+    
+    color: green;
+    size: 80%;
+}
+.slide-page-links-btn{
+    color: black;
+    font-size: 80%;
+    margin: auto;
+    text-align: center;
+    margin-right: 10%;
+    margin-top: 15%;
+    list-style-type: none;
+    
+}
