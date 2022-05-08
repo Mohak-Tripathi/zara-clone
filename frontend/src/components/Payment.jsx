@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Payment.css";
 import {useNavigate} from 'react-router-dom'
+import { CartContext } from "../CartContext/CartContext";
 
 
 export default function Payment() {
   const history=useNavigate()
-
+  const {total}=useContext(CartContext);
   return (
       <>
       <div className="bottom">
@@ -60,7 +61,7 @@ export default function Payment() {
   <div>
   <div className="price">
     <div className="total" >TOTAL:</div><div
-    >1125</div></div>
+    >{total}</div></div>
     <button  onClick={()=>history("/CardPayment")} >CONTINUE</button>
   </div>
  

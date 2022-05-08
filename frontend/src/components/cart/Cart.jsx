@@ -10,7 +10,7 @@ import Login from '../Login';
 import Payment from '../Payment';
 function Cart() {
     const [cartData,setCartData]=useState([]);
-    const {cartCount,setCartCount}=useContext(CartContext);
+    const {cartCount,setCartCount,total,setTotal}=useContext(CartContext);
     const {Auth,setAuth}=useContext(AuthContext);
     useEffect(() => {
       cartItems();
@@ -24,12 +24,16 @@ function Cart() {
        }
        const handleDelete=(user)=>{
         //  console.log(user)
+        if(cartCount>0){
+          setCartCount(cartCount-1)
+          setTotal((prev)=> prev - Number((user.price)));
+        }
         axios.delete(`http://localhost:8080/cart/${user.id}`)
         .then((res)=>{console.log("afterdelete",res); cartItems();})
         .then(() => console.log({ status: 'Delete successful' }));
         // setCartData(...cartData)
-      cartCount>0?setCartCount(cartCount-1):setCartCount(cartCount);
-       }
+      
+      }
  
   return (
     <>
@@ -48,6 +52,7 @@ function Cart() {
             </div> 
       )}
     </div>
+    <h3>Total: {total}</h3>
   <Link to={'/payment'}><button>Continue to Payment</button></Link>
     </div>
     :
