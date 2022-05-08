@@ -29,7 +29,7 @@ const LineneProduct = async()=>{
 
  <div className='render_data_Linen'>
 {Linen.map((elem)=>(
-    <Link to={`/Linen_data/${elem.id}`}>
+    <Link to={`/Linen_data/${elem.id}`} className='cart-price'>
       <div key={elem.id}>
             <img className="Linen_image" src={elem.image} alt="" />
             <span>{elem.name} </span>

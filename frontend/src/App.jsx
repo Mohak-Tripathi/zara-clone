@@ -1,25 +1,31 @@
 
 import { Route, Routes } from 'react-router-dom';
 import PoloShirt from "./components/PoloShirt"
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
-import FullPageExample from './components/LandingPage';
+// import FullPageExample from './components/LandingPage';
 import DetailPage from "./components/DetailPage";
+import './App.css';
 import ProductPageZara from './components/ProductPageZara';
 import LinenPage from './components/LinenPage';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import CardPayment from './components/CardPayment';
 import Payment from './components/Payment';
-import log from"./components/
 
+// import DetailPage from './components/DetailPage'
 import Home from './components/Home';
+import Cart from './components/cart/Cart'
+// import { set } from 'mongoose';
 
 const App = () => {
-  
+const [name,setName]=useState('');
+const log =(e)=>{
+  setName(e)
+}
 return(
   <>
-<Navbar/>
+<Navbar name={name}/>
 {/* import DetailPage from './components/DetailPage';
 import Cart from './components/cart/Cart';
 import Home from './components/Home';
@@ -30,9 +36,9 @@ const App = () => { */}
 
 <Routes> 
    <Route path='/' element={<Home/>}/>
-   <Route path="/ProductPage1" element={<ProductPageZara />}/> 
+   <Route path="/product" element={<ProductPageZara />}/> 
    <Route path="/" element={<Home/>}/> 
-   <Route path="/home" element={<Home/>}/>
+   {/* <Route path="/home" element={<Home/>}/> */}
    <Route path="/Home" element={<Home/>}/> 
    <Route path="/LinenPage" element={<LinenPage  />}/> 
    <Route path="/PoloPage" element={<PoloShirt  />}/>
@@ -47,6 +53,7 @@ const App = () => { */}
    <Route path='/Linen_data/:id' element={<DetailPage/>}/>
    <Route path='/cardpayment' element={<CardPayment/>}/>
    <Route path='/payment' element={<Payment/>}/>
+  
    </Routes>  
 
     </>

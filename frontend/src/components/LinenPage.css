@@ -5,6 +5,7 @@
     /* border: 1px solid red; */
     width: 100%;
     margin: auto;
+    
 
 }
 
@@ -12,6 +13,7 @@
     width: 90vw;
     /* border: 1px solid blue; */
     margin: auto;
+    margin-top: 2%;
 }
 
 .Linen_image{

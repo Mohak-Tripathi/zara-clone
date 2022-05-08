@@ -1,13 +1,21 @@
 .subdivproduct{
     display: flex;
+    font-size: 70%;
+    justify-content: space-between;
+    color: black;
+    text-decoration: none;
 
+
+}
+.cart-price{
+    text-decoration: none;
 }
 
 .render-data{
     display: grid;
     grid-template-columns:repeat(4,1fr);
     gap:14px;
-    border: 1px solid red;
+   
     width: 100%;
     margin: auto;
 
@@ -17,6 +25,7 @@
     width: 90vw;
     /* border: 1px solid blue; */
     margin: auto;
+    margin-top: 2%;
 }
 
 .Product_image_tri{
