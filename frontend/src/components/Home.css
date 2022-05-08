@@ -2,6 +2,7 @@
   margin:auto;
   width: 60%;
   height: 60%;
+  margin-top: 3%;
   margin-top: -10px;
 }
 
@@ -31,6 +32,7 @@ height: 50%;
 .bottom-nav{
   margin: auto;
   width: 30%;
+  margin-top: 1%;
   margin-top: 2%;
 
   justify-content: space-between;
