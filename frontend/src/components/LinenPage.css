@@ -17,3 +17,8 @@
 .Linen_image{
     width: 100%
 }
+
+.span_div {
+    display: flex;
+    justify-content: space-around;
+}

@@ -22,28 +22,25 @@ const LineneProduct = async()=>{
 
 
     return (
+      <div className="Main_linen_tri">
+        <div className="render_data_Linen">
+          {Linen.map((elem) => (
+            <div>
+              <img className="Linen_image" src={elem.image} alt="" />
 
-        <div className='Main_linen_tri'>  
-
-
-    <div className='render_data_Linen'>
-{Linen.map((elem)=>(
-<div>
-
-<img className="Linen_image" src={elem.image} alt="" />
-
-
-<span>{elem.name} </span>
-<span>{elem.price} </span>
-</div> 
-
-))}
-
-
-
-    </div>
-    </div>
-  )
+              <div className="span_div">
+                <span>{elem.name} </span>
+                <br />
+                <span>
+                  <span>₹ </span>
+                  {elem.price}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
 }
 
 export default LinenPage
