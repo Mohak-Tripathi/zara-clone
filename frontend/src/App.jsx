@@ -13,6 +13,7 @@ import CardPayment from './components/CardPayment';
 import Payment from './components/Payment';
 import DetailPage from './components/DetailPage';
 import Cart from './components/cart/Cart';
+import Home from './components/Home';
 
 const App = () => {
   
@@ -29,6 +30,7 @@ const App = () => {
 
 <Header openSidebar={toggleSidebar}/>  
 <Routes> 
+   <Route path='/' element={<Home/>}/>
    <Route path="/ProductPage1" element={<ProductPageZara />}/> 
    <Route path="/HomePage" element={<FullPageExample  />}/> 
    <Route path="/LinenPage" element={<LinenPage  />}/> 

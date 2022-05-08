@@ -10,7 +10,6 @@ const nav=useNavigate()
  const [formdata,setformdata]=useState({})
  const {Auth,setAuth}=useContext(AuthContext);
   const handlechange=(e)=>{
-    
    //  console.log(e.target.value)
     const {name,value}=e.target
     setformdata({
@@ -23,14 +22,14 @@ const nav=useNavigate()
   async function onsubmit(e){
 
     e.preventDefault()
-    window.location.href="home.js"
+  
     // console.log(formdata);
 
   // savedata()
 
   try {
   
-    let res=await fetch("http://localhost:8080/login",
+    let res=await fetch("http://localhost:8000/login",
     {
         method:"POST",
         body: JSON.stringify(formdata),
@@ -43,26 +42,21 @@ const nav=useNavigate()
 
       let data=await res.json()
      console.log(data)
-
     console.log(data.token)
-
     if(data.status)
     {
    localStorage.setItem("userdata",JSON.stringify(data.user))
    localStorage.setItem("token",data.token)
- 
-nav("/home")
+   nav("/Home")
+   console.log("userdata",data.user)
     }
-    
-
-   else{
+  else{
     alert(data.message)
  
     }
 
-
 } catch (error) {
-    console.log(error)
+    console.log(error);
     
 }
    
