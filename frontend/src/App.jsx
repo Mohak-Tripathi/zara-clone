@@ -4,17 +4,14 @@ import PoloShirt from "./components/PoloShirt"
 import React from 'react';
 import Navbar from './components/Navbar';
 import FullPageExample from './components/LandingPage';
-
-import { Route, Routes } from 'react-router-dom';
-import PoloShirt from "./components/PoloShirt"
-// import React, { useState } from 'react';
-import './App.css';
+import DetailPage from "./components/DetailPage";
 import ProductPageZara from './components/ProductPageZara';
 import LinenPage from './components/LinenPage';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import CardPayment from './components/CardPayment';
 import Payment from './components/Payment';
+import log from"./components/
 
 import Home from './components/Home';
 
