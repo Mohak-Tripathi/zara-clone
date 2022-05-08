@@ -43,7 +43,6 @@ function DetailPage() {
         <h5>MATERIALS, CARE AND ORIGIN</h5>
         <p style={{scrollBehaviour:"smooth"}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus itaque harum qui eos, quos corrupti cum autem suscipit nam perspiciatis minima excepturi cupiditate delectus asperiores doloremque eius maiores mollitia accusantium!</p>  
         </div>
-        
       <div style={{display:"flex", flexDirection:"column",margin:"auto"}}>
              { 
             <div className='detail_div' style={{display:"flex", flexDirection:"column"}}>

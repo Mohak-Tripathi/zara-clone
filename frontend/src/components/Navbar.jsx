@@ -34,9 +34,9 @@ const Navbar = ({name}) => {
       <div className='slide-page-links-btn'>
      <Link to="\" className='inner-slide-link-btn'> <li>NEW</li></Link>
      <Link to="\" className='inner-slide-link-btn'> <li>ISLAND LIFENEW</li></Link>
-     <Link to="\" className='inner-slide-link-btn'><li>BASICS</li></Link>
-     <Link to="\" className='inner-slide-link-btn'><li>LINEN</li></Link>
-     <Link to="\" className='inner-slide-link-btn'><li>POLO SHIRTS</li></Link>
+     <Link to={"\product"} className='inner-slide-link-btn'><li>BASICS</li></Link>
+     <Link to={"\LinenPage"} className='inner-slide-link-btn'><li>LINEN</li></Link>
+     <Link to={"\PoloPage"} className='inner-slide-link-btn'><li>POLO SHIRTS</li></Link>
        
      <Link to="\" className='inner-slide-link-btn'><li>BEST SELLERS</li></Link>
      <Link to="\" className='inner-slide-link-btn'><li>SHIRTS</li></Link>
