@@ -14,6 +14,7 @@ import Payment from './components/Payment';
 import DetailPage from './components/DetailPage';
 import Cart from './components/cart/Cart';
 import Home from './components/Home';
+import Logout from './components/logout/Logout';
 
 const App = () => {
   
@@ -48,6 +49,7 @@ const App = () => {
    <Route path='/Linen_data/:id' element={<DetailPage/>}/>
    <Route path='/cardpayment' element={<CardPayment/>}/>
    <Route path='/payment' element={<Payment/>}/>
+   <Route path='/logout' element={<Logout/>}/>
    </Routes>  
    <Sidebar sidebar={sidebar}/>
     </>

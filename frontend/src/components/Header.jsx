@@ -1,8 +1,9 @@
 import React, { useContext, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../CartContext/AuthContext';
 import { CartContext } from '../CartContext/CartContext'
 import "./Header.css"
+import Logout from './logout/Logout';
 
 function Header({openSidebar,name}) {
 
@@ -10,7 +11,7 @@ function Header({openSidebar,name}) {
     const {cartCount}=useContext(CartContext);
     const {Auth,setAuth}=useContext(AuthContext);
 // console.log("here we needed",name)
-   
+   const navigate=useNavigate()
     return (
         <>
 <div className="Navbar_Tripathi">  
@@ -23,12 +24,15 @@ function Header({openSidebar,name}) {
  
 
 <div> 
-  {!Auth?<Link to="/login">Login</Link>:<button style={{
-    width:"fitContent",
-    backgroundColor:"white",
-    color:"black", border:"none"
-    }}>
-    {name} </button>}
+  {!Auth?<Link to="/login">Login</Link>:
+  <div onClick={()=>navigate('/logout')}
+          style={{
+                width:"fitContent",
+                backgroundColor:"white",
+                color:"black", border:"none"
+                }}>
+  {name} <span>Logout</span></div> } 
+
 </div>
 <div> HELP </div>
 <img src="https://www.zara.com/in/en/shop/cart" alt='' /> 
