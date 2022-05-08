@@ -42,19 +42,19 @@ export default function CardPayment() {
     <>
       <div>
           
-        <div className="bottom">
-          <h2 className="h2">ENTER YOUR CARD DETAILS</h2>
+        <div className="card-details-container">
+          <h3 className="ha2">ENTER YOUR CARD DETAILS</h3>
           <img
             class="img"
             src="https://static.zara.net/static/images/payment/payment/icon-payment-visa.svg"
             alt=""
           />
-          <form action="">
+          <form action="" className="card-detail">
             <input type="number" name="cardnumber"  value={user.cardnumber} onChange={handleChange}  placeholder="CARD NUMBER"  />
             <input type="month" name="month" value={user.month} onChange={handleChange}  placeholder="MONTH" />
             <input type="number" name="year" value={user.year} onChange={handleChange}  placeholder="YEAR" />
             <br />
-            <input type="text" name="cardholder" value={user.cardholder} onChange={handleChange}  placeholder="CARD HOLDER" />
+            <input type="text" className="card-holder-input" name="cardholder" value={user.cardholder} onChange={handleChange}  placeholder="CARD HOLDER" />
             <input type="text" name="cvv" value={user.cvv} onChange={handleChange} placeholder="CVV2 SECURITY CODE" />
           </form>
           

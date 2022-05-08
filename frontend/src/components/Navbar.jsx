@@ -2,9 +2,11 @@ import React, { useContext } from 'react';
 import "./Navbar.css"
 import { Link, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../CartContext/AuthContext';
+import { CartContext } from '../CartContext/CartContext';
 const Navbar = ({name}) => {
  const {Auth,setAuth}=useContext(AuthContext);
- const navigate=useNavigate()
+ const navigate=useNavigate();
+ const {cartCount,setCartCount}=useContext(CartContext);
   return (
       <>
     
@@ -92,7 +94,14 @@ const Navbar = ({name}) => {
   <span>Hii !! {name}</span></div> } 
     </button>
     <button  className="btn-1 " type="button">Help</button>
-     <button className="btn-1 " type="button">CART</button>
+     {Auth?<button className="btn-1"
+     type="button"
+     onClick={()=>navigate('/cart')}
+     >CART:-{cartCount}</button>
+     :
+     <button className="btn-1 " type="button" 
+     onClick={()=>navigate('/login')}
+     >CART</button>}
         </div>
     </div>
 

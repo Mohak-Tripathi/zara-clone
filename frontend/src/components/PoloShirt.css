@@ -12,8 +12,14 @@
     width: 90vw;
     /* border: 1px solid blue; */
     margin: auto;
+   
 }
 
 .polo_image{
     width: 100%
+}
+
+.span_div {
+    display: flex;
+    justify-content: space-around;
 }

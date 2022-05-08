@@ -1,0 +1,26 @@
+.Main_women_tri{
+    width: 90vw;
+    /* border: 1px solid blue; */
+    margin: auto;
+     margin-top: 3%;
+}
+
+.render_data_women {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: auto;
+
+}
+
+
+.women_image {
+    width: 100%
+}
+
+.span_div{
+    display: flex;
+    justify-content: space-around;
+}
