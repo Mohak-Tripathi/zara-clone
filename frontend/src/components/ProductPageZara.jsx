@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import {useState} from "react"
+import { Link } from 'react-router-dom'
 
 import "./ProductPageZara.css"
 
@@ -29,16 +30,19 @@ const getProduct = async() =>{
     <div className="render-data" >
 
 {Product.map((elem)=>(
-<div > 
+  <Link to={`/product/${elem.id}`}>
+  <div key={elem.id}> 
      <img className='Product_image_tri'  src={elem.image} alt=""/>
-
-<div className='subdivproduct'> 
-<div>  {elem.name} </div>
-<div>  {elem.price} </div>
-</div> 
-
-
+      <div className='subdivproduct'> 
+          <div>  {elem.name} </div>
+          <div>  {elem.price} </div>
+      </div> 
 </div>
+  </Link>
+
+
+
+
 
 ))}
  </div>

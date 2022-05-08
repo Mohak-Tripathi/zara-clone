@@ -4,12 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import { CartContextProvider } from './CartContext/CartContext';
+import { AuthContextProvider } from './CartContext/AuthContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter> 
+    <AuthContextProvider>
+    <CartContextProvider>
     <App />
+    </CartContextProvider>
+    </AuthContextProvider>
      </BrowserRouter>
     
   </React.StrictMode>
