@@ -44,13 +44,13 @@ function DetailPage() {
         <p style={{scrollBehaviour:"smooth"}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus itaque harum qui eos, quos corrupti cum autem suscipit nam perspiciatis minima excepturi cupiditate delectus asperiores doloremque eius maiores mollitia accusantium!</p>  
         </div>
       <div style={{display:"flex", flexDirection:"column",margin:"auto"}}>
-             { 
+             {
             <div className='detail_div' style={{display:"flex", flexDirection:"column"}}>
             <img className="detail_img" src={user.image} alt="" />
             <span> {user.name} </span>
             <span>Price: {user.price} </span>
             <button onClick={(e)=>handleProduct(user)}>Add to Cart</button>
-            </div>                  
+            </div>               
         }
     </div>
     </div>
