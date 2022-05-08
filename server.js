@@ -2,7 +2,7 @@ const app = require("./index");
 
 const connect = require("./src/configs/db");
 
-const port=process.env.PORT||8080
+const port=process.env.PORT||8000
 app.listen(port, async () => {
   try {
     await connect();

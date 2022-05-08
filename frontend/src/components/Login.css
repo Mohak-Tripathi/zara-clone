@@ -30,12 +30,14 @@
     }
     .create-btn{
         background-color: black;
-        width: 80%;
-        height: 16%;
-        text-align: center;
+      
         font-size: 90%;
         color: white;
         text-decoration: none;
+        padding:2% 32% 3% 10%;
+        
+        
+        
     }
     .create-btn:hover{
     color: white;
