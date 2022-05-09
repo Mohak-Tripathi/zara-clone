@@ -18,26 +18,23 @@ function DetailPage() {
 
 
 
-useEffect(()=>{
-getData()
-},[])
 
 
 
 
     // useEffect(() => {
-    //     axios.get(`http://localhost:8080/Polo_shirt/${id}`)
+    //     axios.get(`https://zaraclone.herokuapp.com/mens/${id}`)
     //    .then((res)=>{
     //      setUser(res.data)
-    //      console.log(res.data)
+    //       console.log(res.data)
     //    })}, [])
 
-      //  useEffect(() => {
-      //   axios.get(`http://localhost:8080/product/${id}`)
-      //  .then((res)=>{
-      //    setUser(res.data)
-      //    console.log(res.data)
-      //  })}, [])
+       useEffect(() => {
+        axios.get(`http://localhost:8080/product/${id}`)
+       .then((res)=>{
+         setUser(res.data)
+         console.log(res.data)
+       })}, [])
 
       //  useEffect(() => {
       //   axios.get(`http://localhost:8080/Linen_data/${id}`)
@@ -53,15 +50,21 @@ getData()
          console.log(res.data)
        })}, [])
 
+       useEffect(() => {
+        axios.get(`http://localhost:8080/KidsData/${id}`)
+       .then((res)=>{
+         setUser(res.data)
+         console.log(res.data)
+       })}, [])
+
+
+
       //  useEffect(() => {
-      //   axios.get(`http://localhost:8080/KidsData/${id}`)
+      //   axios.get(`${id}`)
       //  .then((res)=>{
       //    setUser(res.data)
       //    console.log(res.data)
       //  })}, [])
-
-
-
 
 
 

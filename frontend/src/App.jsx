@@ -21,7 +21,7 @@ import Kidsproduct from "./components/Kidsproduct";
 const App = () => {
   const [name, setName] = useState("");
   const log = (e) => {
-    
+
     setName(e);
   };
   return (
@@ -51,6 +51,11 @@ const App = () => {
         <Route path="/KidsData" element={<Kidsproduct />} />
         <Route path="/WomenData/:id" element={<DetailPage />}/>
         <Route path="/KidsData/:id" element={<DetailPage />}/>
+        
+        <Route path="/mens/:id" element={<DetailPage />}/>
+       
+        
+       
       </Routes>
     </>
   );

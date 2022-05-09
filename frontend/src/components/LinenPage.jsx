@@ -10,7 +10,7 @@ function LinenPage() {
   }, []);
 
   const LineneProduct = async () => {
-    const data = await fetch("http://localhost:8080/Linen_data");
+    const data = await fetch("https://zaraclone.herokuapp.com/mens");
 
     const res = await data.json();
 
