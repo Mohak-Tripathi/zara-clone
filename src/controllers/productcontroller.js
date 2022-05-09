@@ -9,7 +9,8 @@ const router=express.Router()
 const product=require("../models/product.model")
 
 
-router.get("/",async (req,res)=>{
+router.get("/products",async (req,res)=>{
+
     const newproduct= await product.find({}).lean().exec()
     return res.status(200).send({newproduct})
 

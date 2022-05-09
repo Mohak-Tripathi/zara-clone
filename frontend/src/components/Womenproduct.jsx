@@ -10,7 +10,7 @@ const Womenproduct = () => {
   });
 
   const getwomendata = async () => {
-    const getdata = await fetch("http://localhost:8080/WomenData");
+    const getdata = await fetch("http://localhost:8080/products");
     const res = await getdata.json();
 
     setWomendata(res);
