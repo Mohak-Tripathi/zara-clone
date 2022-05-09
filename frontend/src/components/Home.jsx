@@ -7,7 +7,7 @@ const Home = () => {
     <div>
       <Carousel interval={800} color={"red"}>
         <Carousel.Item>
-          <Link to="/women">
+          <Link to="/WomenData">
             <img
               className="d-block "
               src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-13-2-in//w/860/IMAGE-landscape-116bff2f-9a68-4dbc-9db4-88f1bb7a74e1-default_0.jpg?ts=1648724342119/800x400?text=First slide&bg=373940"
@@ -78,7 +78,7 @@ const Home = () => {
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <Link to="/kids">
+          <Link to="/KidsData">
             <img
               className="d-block "
               src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-kids-girl/subhome-xmedia-18//w/860/IMAGE-landscape-6fa3f4ce-aa69-49da-aa47-f300ba67b0cc-default_0.jpg?ts=1651833647878/300x200?text=Third slide&bg=20232a"

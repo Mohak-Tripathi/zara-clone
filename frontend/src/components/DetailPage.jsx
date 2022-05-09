@@ -1,14 +1,16 @@
 import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
+import { AuthContext } from '../CartContext/AuthContext';
 import { CartContext } from '../CartContext/CartContext';
 import './Detail.css'
 function DetailPage() {
     const {id} =useParams();
     const [user,setUser]=useState({})
     const {cartCount,setCartCount,total,setTotal}=useContext(CartContext);
+    const navigate=useNavigate();
     // const {total,setTotal}=useContext()
-
+    const {Auth}=useContext(AuthContext)
     useEffect(() => {
         axios.get(`http://localhost:8080/Polo_shirt/${id}`)
        .then((res)=>{
@@ -49,6 +51,7 @@ function DetailPage() {
                 axios.post(`http://localhost:8080/cart`,user);
                 setCartCount(cartCount + 1);
                 setTotal((prev)=>prev + Number((user.price)));
+                // alert("")
               }
   return (
     <>
@@ -63,9 +66,11 @@ function DetailPage() {
             <img className="detail_img" src={user.image} alt="" />
             <span> {user.name} </span>
             <span>Price: {user.price} </span>
-            <button onClick={(e)=>handleProduct(user)}>Add to Cart</button>
+            {Auth?<button onClick={(e)=>handleProduct(user)}>Add to Cart</button>
+            :<button onClick={(e)=>{alert("login or register before proceed to cart"); navigate('/login')}}>Add to Cart</button>}
             </div>               
         }
+        <div></div>
     </div>
     </div>
     </>
