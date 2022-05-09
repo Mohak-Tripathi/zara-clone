@@ -43,7 +43,7 @@ const Home = () => {
           </div>
         </Carousel.Item>
         <Carousel.Item interval={500}>
-          <Link to="/PoloPage"><img
+          <Link to="/LinenPage"><img
             className="d-block"
             src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-18-2//w/860/IMAGE-landscape-47c3189b-de72-4c3f-a875-7e5fe122493f-default_0.jpg?ts=1651840697950/800x400?text=Second slide&bg=282c34"
             alt="Second slide"

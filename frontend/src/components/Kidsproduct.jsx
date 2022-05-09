@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Kidsproduct.css";
 
 const Kidsproduct = () => {
@@ -18,7 +19,7 @@ const Kidsproduct = () => {
     <div className="Main_kids_tri">
       <div className="render_data_kids">
         {kidsData.map((elem) => (
-          <div>
+          <Link to={`/KidsData/${elem.id}`}>
             <img className="kids_image" src={elem.image} alt="" />
 
             <div className="span_div">
@@ -29,7 +30,7 @@ const Kidsproduct = () => {
                 {elem.price}
               </span>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

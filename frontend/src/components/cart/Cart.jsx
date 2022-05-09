@@ -38,7 +38,7 @@ function Cart() {
   return (
     <>
     {Auth?<div>
-    <div style={{display:"grid", gridTemplateColumns:"repeat(2,450px)",gridTemplateRows:"repeat(200px)",justifyContent:"space-around",gap:"10px"}}>
+    <div style={{display:"grid", marginTop:"20px",gridTemplateColumns:"repeat(2,450px)",gridTemplateRows:"repeat(200px)",justifyContent:"space-around",gap:"10px"}}>
     {cartData.map((user)=>
         <div key={user.id}  style={{display:"flex", gap:"10px"}} >
             <img className="detail_img" src={user.image} alt="" />
@@ -52,8 +52,11 @@ function Cart() {
             </div> 
       )}
     </div>
-    <h3>Total: {total}</h3>
-  <Link to={'/payment'}><button>Continue to Payment</button></Link>
+    <div style={{float:"right"}}>
+        <h4 style={{marginLeft:"20%"}}>Total: {total}</h4>
+        <Link to={'/payment'}><button>Continue to Payment</button></Link>
+    </div>
+  
     </div>
     :
     <div>

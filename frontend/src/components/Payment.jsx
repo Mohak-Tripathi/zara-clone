@@ -57,9 +57,9 @@ export default function Payment() {
 
 
 
-  <div className="card">
+  <div className="card" style={{marginLeft:"0%"}}>  
   <div>
-  <div className="price">
+  <div className="price" >
     <div className="total" >TOTAL:</div><div
     >{total}</div></div>
     <button  onClick={()=>history("/CardPayment")} >CONTINUE</button>

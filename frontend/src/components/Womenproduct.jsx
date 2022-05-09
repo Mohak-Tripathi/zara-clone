@@ -14,6 +14,7 @@ const Womenproduct = () => {
     const res = await getdata.json();
 
     setWomendata(res);
+    console.log("womendata",res)
   };
 
   return (
@@ -21,10 +22,9 @@ const Womenproduct = () => {
       
       <div className="render_data_women">
 
-        {womendata.map((elem) => (
-
+        {womendata.map((elem) => 
           
-          <Link to={`/womendata/${elem.id}`}> 
+          <Link to={`/WomenData/${elem.id}`}> 
            <div key={elem.id}> 
           <img className='Product_image_tri'  src={elem.image} alt=""/>
            <div className='subdivproduct'> 
@@ -33,7 +33,7 @@ const Womenproduct = () => {
            </div> 
      </div>
            </Link>
-        ))}
+        )}
       </div>
     </div>
   );

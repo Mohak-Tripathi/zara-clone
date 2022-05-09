@@ -30,6 +30,20 @@ function DetailPage() {
          console.log(res.data)
        })}, [])
 
+       useEffect(() => {
+        axios.get(`http://localhost:8080/WomenData/${id}`)
+       .then((res)=>{
+         setUser(res.data)
+         console.log(res.data)
+       })}, [])
+
+       useEffect(() => {
+        axios.get(`http://localhost:8080/KidsData/${id}`)
+       .then((res)=>{
+         setUser(res.data)
+         console.log(res.data)
+       })}, [])
+
        const handleProduct=(user)=>{
             console.log("aftere clicck",user)
                 axios.post(`http://localhost:8080/cart`,user);

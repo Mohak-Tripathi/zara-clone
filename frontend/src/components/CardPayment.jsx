@@ -1,10 +1,12 @@
 import React, { useContext, useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 import { CartContext } from "../CartContext/CartContext";
 // import { Navigate } from "react-router-dom";
 import "./CardPayment.css";
 
 export default function CardPayment() {
-  const {total}=useContext(CartContext)
+  const {total}=useContext(CartContext);
+  const navigate=useNavigate()
   const [user,setUser]=useState({
     cardnumber:"",
     month:"",
@@ -28,7 +30,8 @@ export default function CardPayment() {
   const purchase=()=>{
     const {cardnumber,month,year,cardholder,cvv}=user
     if((cardnumber && month && year && cardholder && cvv)){
-      alert("purchase succesfull")
+      alert("purchase succesfull");
+      navigate('/Home')
       // history("/home")
     }else{
       alert("fill the all details")
