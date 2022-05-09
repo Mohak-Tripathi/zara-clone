@@ -1,12 +1,10 @@
 {
   "cart": [
     {
-      "image": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/371/1063035711_2_1_1.jpg?ts=1648724945307",
-      "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
-      "name": "STRIPED SHIRT",
-      "price": "2,990.00",
-      "id": "801",
-      "cat": "men"
+      "id": 103,
+      "image": "https://static.zara.net/photos///2022/V/0/2/p/0962/454/251/2/w/270/0962454251_2_1_1.jpg?ts=1649346724796",
+      "name": "SKULL PRINT T-SHIRT",
+      "price": "1990.00"
     }
   ],
   "product": [
