@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import "./Womenproduct.css";
-
+import { Link } from "react-router-dom";
 const Womenproduct = () => {
   const [womendata, setWomendata] = useState([]);
 
@@ -18,20 +18,21 @@ const Womenproduct = () => {
 
   return (
     <div className="Main_women_tri">
+      
       <div className="render_data_women">
-        {womendata.map((elem) => (
-          <div>
-            <img className="women_image" src={elem.image} alt="" />
 
-            <div className="span_div">
-              <span>{elem.name} </span>
-              <br />
-              <span>
-                <span>₹  </span>
-                {elem.price}
-              </span>
-            </div>
-          </div>
+        {womendata.map((elem) => (
+
+          
+          <Link to={`/womendata/${elem.id}`}> 
+           <div key={elem.id}> 
+          <img className='Product_image_tri'  src={elem.image} alt=""/>
+           <div className='subdivproduct'> 
+               <div >  {elem.name} </div>
+               <div >  {elem.price} </div>
+           </div> 
+     </div>
+           </Link>
         ))}
       </div>
     </div>

@@ -30,12 +30,12 @@ const getProduct = async() =>{
     <div className="render-data" >
 
 {Product.map((elem)=>(
-  <Link to={`/product/${elem.id}`}>
+  <Link to={`/product/${elem.id}`} className='cart-price'>
   <div key={elem.id}> 
      <img className='Product_image_tri'  src={elem.image} alt=""/>
       <div className='subdivproduct'> 
-          <div>  {elem.name} </div>
-          <div>  {elem.price} </div>
+          <div >  {elem.name} </div>
+          <div >  {elem.price} </div>
       </div> 
 </div>
   </Link>

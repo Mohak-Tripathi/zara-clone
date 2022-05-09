@@ -31,14 +31,23 @@ form>input{
     font-size: 10px;
     font-weight: bold;
     margin-right: 30px;
-    margin-left: 7%;
+  
     margin-top: 40px;
 }
-.h2{
+.ha2{
     margin-left: 7%;
+    font-size: 57%;
 
 }
-
+.card-details-container{
+   border: 1px solid black;
+    width: 50%;
+    margin: auto;margin-top: 3%;
+}
+.card-holder-input{
+    margin-left: 10%;
+    width: 20%;
+}
 @media only screen and (min-width:375px) and (max-width:768px){
  
     .cards{
@@ -57,7 +66,7 @@ form>input{
     .pr{
         margin-left: 15%;
     }
-    .bottom>img{
+    .card-details-container>img{
         width: 90px;
     }
     form>input{

@@ -5,6 +5,7 @@
     /* border: 1px solid red; */
     width: 100%;
     margin: auto;
+    
 
 }
 
@@ -12,6 +13,7 @@
     width: 90vw;
     /* border: 1px solid blue; */
     margin: auto;
+    margin-top: 2%;
 }
 
 .Linen_image{
@@ -20,5 +22,9 @@
 
 .span_div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.cart-price{
+    color: gray;
+    justify-content: space-between;
 }
