@@ -27,7 +27,7 @@ app.post("/login", login);
 // // app.use("/home",Home)
 
 
- app.use("/products",productcontroller)
+ app.get("/products",productcontroller)
 
 app.get("/",(req,res)=>{
     res.send("welcome Zara.com clone")
