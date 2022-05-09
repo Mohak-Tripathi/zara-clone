@@ -3,16 +3,28 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import { AuthContext } from '../CartContext/AuthContext';
 import { CartContext } from '../CartContext/CartContext';
+
 import './Detail.css'
 function DetailPage() {
     const {id} =useParams();
 
     const [user,setUser]=useState({})
 
-    const {cartCount,setCartCount,total,setTotal}=useContext(CartContext);
+    
+    const {getData,cartCount,setCartCount,total,setTotal}=useContext(CartContext);
     const navigate=useNavigate();
-    // const {total,setTotal}=useContext()
+    //  const {total,setTotal}=useContext()
     const {Auth}=useContext(AuthContext)
+
+
+
+useEffect(()=>{
+getData()
+},[])
+
+
+
+
     // useEffect(() => {
     //     axios.get(`http://localhost:8080/Polo_shirt/${id}`)
     //    .then((res)=>{
@@ -48,9 +60,83 @@ function DetailPage() {
       //    console.log(res.data)
       //  })}, [])
 
+
+
+
+
+
+
        const handleProduct=(user)=>{
+
+        console.log("aftere clicck",user)
+        let token = localStorage.getItem("token");
+        console.log(token)
+        var data;
+        // var flag = false;
+        // let c = document.querySelector("#counter");
+     let  userdata= JSON.stringify(user)
+      
+        let saveAddress = async (userdata) => {
+          try {
+            // let address = {
+            //   country: document.querySelector("#country").value,
+            //   name: document.querySelector("#name").value,
+            //   phone: document.querySelector("#phone").value,
+            //   postal: document.querySelector("#postal").value,
+            //   address: document.querySelector("textarea").value,
+            // };
+            // address = JSON.stringify();
+            let res = await fetch("https://zaraclone.herokuapp.com/carts", {
+              method: "POST",
+              body: userdata,
+              headers: {
+                Authorization: `Bearer ${token}`,
+                "Content-Type": "application/json",
+              },
+            });
+      
+            let dat = await res.json();
+            console.log(dat);
+            // getData();
+            // window.location.href="payment.html"
+          } catch (error) {
+            console.log(error);
+          }
+        };
+
+        saveAddress(userdata)
+
+        // let  token =localStorage.getItem("token")
+
+        let getData = async () => {
+         try {
+          let data = await fetch("https://zaraclone.herokuapp.com/carts", {
+             method: "GET",
+     
+             headers: {
+               Authorization: `Bearer ${token}`,
+               "Content-Type": "application/json",
+             },
+           });
+     
+           data = await data.json();
+           console.log(data);
+ var sum=0;
+            setUser(data)
+          for(var i=0;i<data.length;i++){
+ sum=sum+data[i].price
+          } 
+          setTotal(sum)
+         setCartCount(data.length)
+         } catch (error) {
+           console.log(error);
+         }
+       };
+
+
+
             console.log("aftere clicck",user)
-                axios.post(`http://localhost:8080/cart`,user);
+                // axios.post(`http://localhost:8080/cart`,user);
                 setCartCount(cartCount + 1);
                 setTotal((prev)=>prev + Number((user.price)));
                 // alert("")

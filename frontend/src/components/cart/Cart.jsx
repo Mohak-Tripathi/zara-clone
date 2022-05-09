@@ -9,29 +9,103 @@ import Home from '../Home';
 import Login from '../Login';
 import Payment from '../Payment';
 function Cart() {
-    const [cartData,setCartData]=useState([]);
+      const [cartData,setCartData]=useState([]);
+
+// /const [cart,setcart]=useState(0)
+
+//  const [amount,setamount]=useState(0)
+
     const {cartCount,setCartCount,total,setTotal}=useContext(CartContext);
+
+
     const {Auth,setAuth}=useContext(AuthContext);
     useEffect(() => {
-      cartItems();
+      getData();
+      // cartItems();
        }, [])
+
+       
        const cartItems=()=>{
-        axios.get(`http://localhost:8080/cart`)
+        axios.get(`https://zaraclone.herokuapp.com/carts`)
         .then((res)=>{
-          setCartData(res.data)
+           setCartData(res.data)
           console.log(res.data)
         })
        }
-       const handleDelete=(user)=>{
-        //  console.log(user)
+
+
+let  token =localStorage.getItem("token")
+
+       let getData = async () => {
+        try {
+         let data = await fetch("https://zaraclone.herokuapp.com/carts", {
+            method: "GET",
+    
+            headers: {
+              Authorization: `Bearer ${token}`,
+              "Content-Type": "application/json",
+            },
+          });
+    
+          data = await data.json();
+          console.log(data);
+var sum=0;
+          //  setTotal(data)
+         for(var i=0;i<data.length;i++){
+sum=sum+data[i].price
+         } 
+         setCartData(data)
+         setTotal(sum)
+        setCartCount(data.length)
+        } catch (error) {
+          console.log(error);
+        }
+      };
+     
+
+
+
+
+       const handleDelete=async (user)=>{
+
+
+console.log(user)
+
+        try {
+          console.log(user);
+          let dat = await fetch(`https://zaraclone.herokuapp.com/carts/${user._id}`, {
+            method: "DELETE",
+
+            headers: {
+              Authorization: `Bearer ${token}`,
+              "Content-Type": "application/json",
+            },
+          });
+          // flag = true;
+          getData();
+        } catch (error) {
+          console.log(error);
+        }
+
+
+
+
+
+
+
+
+         console.log(user)
         if(cartCount>0){
           setCartCount(cartCount-1)
+
           setTotal((prev)=> prev - Number((user.price)));
+
         }
-        axios.delete(`http://localhost:8080/cart/${user.id}`)
-        .then((res)=>{console.log("afterdelete",res); cartItems();})
-        .then(() => console.log({ status: 'Delete successful' }));
-        // setCartData(...cartData)
+
+        // axios.delete(`https://zaraclone.herokuapp.com/carts/${user.id}`)
+        // .then((res)=>{console.log("afterdelete",res); cartItems();})
+        // .then(() => console.log({ status: 'Delete successful' }));
+        // // setCartData(...cartData)
       
       }
  

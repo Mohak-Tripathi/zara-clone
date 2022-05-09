@@ -50,7 +50,8 @@ const nav=useNavigate()
    localStorage.setItem("userdata",JSON.stringify(data.user))
    localStorage.setItem("token",data.token)
    nav("/Home");
-   setAuth(true);
+   
+     setAuth(true);
    log(data.user.name);
 
      console.log("userdata",data.user)

@@ -21,6 +21,7 @@ import Kidsproduct from "./components/Kidsproduct";
 const App = () => {
   const [name, setName] = useState("");
   const log = (e) => {
+    
     setName(e);
   };
   return (
