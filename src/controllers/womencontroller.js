@@ -9,7 +9,7 @@ const router=express.Router()
 const Women=require("../models/women.model")
 
 
-router.get("/women",async (req,res)=>{
+router.get("/",async (req,res)=>{
 
     const womendata= await Women.find({}).lean().exec()
     return res.status(200).send(womendata)
