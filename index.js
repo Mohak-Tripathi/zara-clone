@@ -1,6 +1,7 @@
 const express=require("express")
 const cors=require("cors");
 const productcontroller=require("./src/controllers/productcontroller")
+const womencontroller=require("./src/controllers/womencontroller")
 const app=express()
 app.use(express.json());
 
@@ -26,7 +27,7 @@ app.post("/login", login);
 
 // // app.use("/home",Home)
 
-
+app.get("/womens",womencontroller)
  app.get("/products",productcontroller)
 
 app.get("/",(req,res)=>{
