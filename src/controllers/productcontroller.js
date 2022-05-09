@@ -6,12 +6,12 @@ const router=express.Router()
 
 //namechange
 
-const product=require("../models/product.model")
+const Product=require("../models/product.model")
 
 
 router.get("/products",async (req,res)=>{
 
-    const newproduct= await product.find({}).lean().exec()
+    const newproduct= await Product.find({}).lean().exec()
     return res.status(200).send({newproduct})
 
 
