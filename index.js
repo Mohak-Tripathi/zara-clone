@@ -3,6 +3,7 @@ const cors=require("cors");
 const productcontroller=require("./src/controllers/productcontroller")
 const app=express()
 app.use(express.json());
+
 app.use(ignoreFavicon);
  function ignoreFavicon(req, res, next) {
   if (req.originalUrl.includes('favicon.ico')) {
