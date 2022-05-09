@@ -2,6 +2,7 @@ const express=require("express")
 const cors=require("cors");
 const productcontroller=require("./src/controllers/productcontroller")
 const womencontroller=require("./src/controllers/womencontroller")
+const cartcontroller=require("./src/controllers/cartcontroller")
 const app=express()
 app.use(express.json());
 
@@ -25,8 +26,9 @@ app.post("/register", register);
 
 app.post("/login", login);
 
-// // app.use("/home",Home)
+// // app.use("/home",Home) roter maker
 
+app.use("/carts",cartcontroller)
 app.use("/womens",womencontroller)
  app.use("/products",productcontroller)
 

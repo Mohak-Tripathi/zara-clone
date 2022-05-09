@@ -6,7 +6,9 @@ import { CartContext } from '../CartContext/CartContext';
 import './Detail.css'
 function DetailPage() {
     const {id} =useParams();
+
     const [user,setUser]=useState({})
+
     const {cartCount,setCartCount,total,setTotal}=useContext(CartContext);
     const navigate=useNavigate();
     // const {total,setTotal}=useContext()
@@ -35,7 +37,7 @@ function DetailPage() {
        useEffect(() => {
         axios.get(`https://zaraclone.herokuapp.com/womens/${id}`)
        .then((res)=>{
-         setUser(res.data)
+         setUser(res.data[0])
          console.log(res.data)
        })}, [])
 
@@ -64,7 +66,9 @@ function DetailPage() {
              {
             <div className='detail_div' style={{display:"flex", flexDirection:"column"}}>
             <img className="detail_img" src={user.image} alt="" />
+
             <span> {user.name} </span>
+
             <span>Price: {user.price} </span>
             {Auth?<button onClick={(e)=>handleProduct(user)}>Add to Cart</button>
             :<button onClick={(e)=>{alert("login or register before proceed to cart"); navigate('/login')}}>Add to Cart</button>}
