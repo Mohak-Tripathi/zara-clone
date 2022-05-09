@@ -1,10 +1,44 @@
 {
   "cart": [
     {
-      "id": 103,
-      "image": "https://static.zara.net/photos///2022/V/0/2/p/0962/454/251/2/w/270/0962454251_2_1_1.jpg?ts=1649346724796",
-      "name": "SKULL PRINT T-SHIRT",
-      "price": "1990.00"
+      "id": 502,
+      "image": "https://static.zara.net/photos///2022/V/0/1/p/3465/270/250/12/w/314/3465270250_2_1_1.jpg?ts=1651841659071",
+      "name": "LINEN TOP",
+      "price": "2990"
+    },
+    {
+      "id": 511,
+      "image": "https://static.zara.net/photos///2022/V/0/1/p/3739/855/330/2/w/314/3739855330_1_1_1.jpg?ts=1651827734448",
+      "name": "PANELLED PRINTED DRESS",
+      "price": "3990"
+    },
+    {
+      "image": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/371/1063035711_2_1_1.jpg?ts=1648724945307",
+      "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
+      "name": "STRIPED SHIRT",
+      "price": "2990.00",
+      "id": "801",
+      "cat": "men"
+    },
+    {
+      "id": 501,
+      "image": "https://static.zara.net/photos///2022/V/0/1/p/9878/117/070/12/w/314/9878117070_2_1_1.jpg?ts=1651841713202",
+      "name": "PRINTED BLOUSE WITH BOW",
+      "price": "2890"
+    },
+    {
+      "image": "https://static.zara.net/photos///2022/V/0/2/p/4310/859/420/2/w/312/4310859420_2_4_1.jpg?ts=1648116157310",
+      "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
+      "name": "STRIPED SHIRT",
+      "price": "2990.00",
+      "id": "802",
+      "cat": "men"
+    },
+    {
+      "id": 503,
+      "image": "https://static.zara.net/photos///2022/V/0/1/p/7969/046/251/2/w/314/7969046251_1_1_1.jpg?ts=1644423513750",
+      "name": "SATIN SHIRT",
+      "price": "1990"
     }
   ],
   "product": [

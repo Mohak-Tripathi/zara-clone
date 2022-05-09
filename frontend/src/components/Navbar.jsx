@@ -27,20 +27,20 @@ const Navbar = ({name}) => {
   <div className="offcanvas-body">
    <div>
       <div class className="inner-slide-btn">
-          <Link to="\women"  className='inner-slide-link-btn'>Women</Link>
-          <Link to="\men"  className='inner-slide-link-btn'>MEN</Link>
-          <Link to="\kid" className='inner-slide-link-btn'>KID</Link>
+          <Link to="/WomenData"  className='inner-slide-link-btn'>Women</Link>
+          <Link to="/LinenPage"  className='inner-slide-link-btn'>MEN</Link>
+          <Link to="/KidsData" className='inner-slide-link-btn'>KID</Link>
       </div>
       <div className='slide-page-links-btn'>
-     <Link to="\" className='inner-slide-link-btn'> <li>NEW</li></Link>
-     <Link to="\" className='inner-slide-link-btn'> <li>ISLAND LIFENEW</li></Link>
-     <Link to={"\product"} className='inner-slide-link-btn'><li>BASICS</li></Link>
-     <Link to={"\LinenPage"} className='inner-slide-link-btn'><li>LINEN</li></Link>
-     <Link to={"\PoloPage"} className='inner-slide-link-btn'><li>POLO SHIRTS</li></Link>
+     <Link to="/LinenPage" className='inner-slide-link-btn'> <li>NEW</li></Link>
+     <Link to="KidsData" className='inner-slide-link-btn'> <li>ISLAND LIFENEW</li></Link>
+     <Link to={"/product"} className='inner-slide-link-btn'><li>BASICS</li></Link>
+     <Link to={"/LinenPage"} className='inner-slide-link-btn'><li>LINEN</li></Link>
+     <Link to={"/PoloPage"} className='inner-slide-link-btn'><li>POLO SHIRTS</li></Link>
        
-     <Link to="\" className='inner-slide-link-btn'><li>BEST SELLERS</li></Link>
-     <Link to="\" className='inner-slide-link-btn'><li>SHIRTS</li></Link>
-     <Link to="\" className='inner-slide-link-btn'><li>T-SHIRTS</li></Link>
+     <Link to="/WomenData" className='inner-slide-link-btn'><li>BEST SELLERS</li></Link>
+     <Link to="/KidsData" className='inner-slide-link-btn'><li>SHIRTS</li></Link>
+     <Link to="/LinenPage" className='inner-slide-link-btn'><li>T-SHIRTS</li></Link>
        
      <Link to="\" className='inner-slide-link-btn'><li>TROUSERS</li></Link>
      <Link to="\" className='inner-slide-link-btn'><li>JEANS</li></Link>
@@ -94,7 +94,9 @@ const Navbar = ({name}) => {
      >CART:-{cartCount}</button>
      :
      <button className="btn-1 " type="button" 
-     onClick={()=>navigate('/login')}
+     onClick={()=>{
+       alert("please login or register")
+       navigate('/login')}}
      >CART</button>}
         </div>
     </div >
