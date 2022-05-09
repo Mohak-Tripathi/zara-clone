@@ -11,40 +11,40 @@ function DetailPage() {
     const navigate=useNavigate();
     // const {total,setTotal}=useContext()
     const {Auth}=useContext(AuthContext)
-    useEffect(() => {
-        axios.get(`http://localhost:8080/Polo_shirt/${id}`)
+    // useEffect(() => {
+    //     axios.get(`http://localhost:8080/Polo_shirt/${id}`)
+    //    .then((res)=>{
+    //      setUser(res.data)
+    //      console.log(res.data)
+    //    })}, [])
+
+      //  useEffect(() => {
+      //   axios.get(`http://localhost:8080/product/${id}`)
+      //  .then((res)=>{
+      //    setUser(res.data)
+      //    console.log(res.data)
+      //  })}, [])
+
+      //  useEffect(() => {
+      //   axios.get(`http://localhost:8080/Linen_data/${id}`)
+      //  .then((res)=>{
+      //    setUser(res.data)
+      //    console.log(res.data)
+      //  })}, [])
+
+       useEffect(() => {
+        axios.get(`https://zaraclone.herokuapp.com/womens/${id}`)
        .then((res)=>{
          setUser(res.data)
          console.log(res.data)
        })}, [])
 
-       useEffect(() => {
-        axios.get(`http://localhost:8080/product/${id}`)
-       .then((res)=>{
-         setUser(res.data)
-         console.log(res.data)
-       })}, [])
-
-       useEffect(() => {
-        axios.get(`http://localhost:8080/Linen_data/${id}`)
-       .then((res)=>{
-         setUser(res.data)
-         console.log(res.data)
-       })}, [])
-
-       useEffect(() => {
-        axios.get(`http://localhost:8080/WomenData/${id}`)
-       .then((res)=>{
-         setUser(res.data)
-         console.log(res.data)
-       })}, [])
-
-       useEffect(() => {
-        axios.get(`http://localhost:8080/KidsData/${id}`)
-       .then((res)=>{
-         setUser(res.data)
-         console.log(res.data)
-       })}, [])
+      //  useEffect(() => {
+      //   axios.get(`http://localhost:8080/KidsData/${id}`)
+      //  .then((res)=>{
+      //    setUser(res.data)
+      //    console.log(res.data)
+      //  })}, [])
 
        const handleProduct=(user)=>{
             console.log("aftere clicck",user)

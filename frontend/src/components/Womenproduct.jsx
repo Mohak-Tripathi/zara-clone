@@ -10,9 +10,9 @@ const Womenproduct = () => {
   },[]);
 
   const getwomendata = async () => {
-    const getdata = await fetch("http://localhost:8080/WomenData");
+    const getdata = await fetch("https://zaraclone.herokuapp.com/womens");
     const res = await getdata.json();
-
+console.log(res,"vikrant")
     setWomendata(res);
     console.log("womendata",res)
   };
