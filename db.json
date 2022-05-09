@@ -7,6 +7,20 @@
       "price": "2,990.00",
       "id": "801",
       "cat": "men"
+    },
+    {
+      "id": 102,
+      "image": "https://static.zara.net/photos///2022/V/0/2/p/1466/456/406/2/w/270/1466456406_2_6_1.jpg?ts=1649764276875",
+      "name": "DENIM JACKET WITH CONTRAST EMBROIDERY",
+      "price": "6590.00"
+    },
+    {
+      "image": "https://static.zara.net/photos///2022/V/0/2/p/4310/859/420/2/w/312/4310859420_2_4_1.jpg?ts=1648116157310",
+      "image_logo": "https://static.zara.net/photos///2022/V/0/2/p/1063/035/711/2/w/441/1063035711_2_4_1.jpg?ts=1648724945267",
+      "name": "STRIPED SHIRT",
+      "price": "2990.00",
+      "id": "802",
+      "cat": "men"
     }
   ],
   "product": [

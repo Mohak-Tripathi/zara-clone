@@ -1,13 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { CartContext } from "../CartContext/CartContext";
 // import { Navigate } from "react-router-dom";
 import "./CardPayment.css";
 
-
-
-
-
-
 export default function CardPayment() {
+  const {total}=useContext(CartContext)
   const [user,setUser]=useState({
     cardnumber:"",
     month:"",
@@ -63,7 +60,7 @@ export default function CardPayment() {
         <div className="cards">
           <div className="pr">
             <div className="price">
-              TOTAL : <span></span>
+              TOTAL : <span>{total}</span>
             </div>
             <button onClick={purchase}>
               CONTINUE
