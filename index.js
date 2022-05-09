@@ -21,12 +21,13 @@ const { register, login } = require("./src/controllers/Authcontroller");
 // const { default: Home } = require("./frontend/src/components/Home");
 
 app.post("/register", register);
+
 app.post("/login", login);
 
 // // app.use("/home",Home)
 
 
-// app.use("/product",productcontroller)
+ app.get("/products",productcontroller)
 
 app.get("/",(req,res)=>{
     res.send("welcome Zara.com clone")

@@ -31,7 +31,7 @@ const nav=useNavigate()
 
   try {
   
-    let res=await fetch("http://localhost:8000/login",
+    let res=await fetch("https://zaraclone.herokuapp.com/login",
     {
         method:"POST",
         body: JSON.stringify(formdata),

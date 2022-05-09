@@ -7,7 +7,7 @@ const Womenproduct = () => {
 
   useEffect(() => {
     getwomendata();
-  });
+  },[]);
 
   const getwomendata = async () => {
     const getdata = await fetch("http://localhost:8080/WomenData");
