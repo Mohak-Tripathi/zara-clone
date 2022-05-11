@@ -6,7 +6,7 @@ ZARA Fashion is a Clothing website. ZARA Fashion is one of the e-commerce websit
 # Sign Up Page
 Here the user has to fill all mandatory fields with valid details to create an account. After filling all the fields, if the user clicks on Create Account, the account will be created.
 
-<img src="https://miro.medium.com/max/700/1*UDpxsDd6nfEfxll6w0xVdw.png" alt=""/>
+<img src="https://miro.medium.com/max/700/1*6FE0uTNDq25PloltW5qsRQ.png" alt=""/>
 
 # Sign in Page
 
