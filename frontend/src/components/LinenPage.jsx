@@ -49,7 +49,7 @@ function LinenPage() {
         <div className='Main_linen_tri'>  
 
  <div className='render_data_Linen'>
-{Linen.map((elem)=>(
+{Linen.map((elem)=>
     <Link to={`/Linen_data/${elem.id}`} className='cart-price'>
       <div key={elem.id}> 
      <img className='Product_image_tri'  src={elem.image} alt=""/>
@@ -59,7 +59,7 @@ function LinenPage() {
       </div> 
 </div>
       </Link>
-))}
+)}
     </div>
     </div>
     
