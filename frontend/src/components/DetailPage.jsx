@@ -111,39 +111,39 @@ function DetailPage() {
 
         // let  token =localStorage.getItem("token")
 
-        let getData = async () => {
-         try {
-          let data = await fetch("https://zaraclone.herokuapp.com/carts", {
-             method: "GET",
+//         let getData = async () => {
+//          try {
+//           let data = await fetch("https://zaraclone.herokuapp.com/carts", {
+//              method: "GET",
      
-             headers: {
-               Authorization: `Bearer ${token}`,
-               "Content-Type": "application/json",
-             },
-           });
+//              headers: {
+//                Authorization: `Bearer ${token}`,
+//                "Content-Type": "application/json",
+//              },
+//            });
      
-           data = await data.json();
-           console.log(data);
- var sum=0;
-            setUser(data)
-          for(var i=0;i<data.length;i++){
- sum=sum+data[i].price
-          } 
-          setTotal(sum)
-         setCartCount(data.length)
-         } catch (error) {
-           console.log(error);
-         }
+//            data = await data.json();
+//            console.log(data);
+//  var sum=0;
+// //             setUser(data)
+//           for(var i=0;i<data.length;i++){
+//  sum=sum+data[i].price
+//           } 
+//           setTotal(sum)
+//          setCartCount(data.length)
+//          } catch (error) {
+//            console.log(error);
+//          }
        };
 
 
 
-            console.log("aftere clicck",user)
-                // axios.post(`http://localhost:8080/cart`,user);
-                setCartCount(cartCount + 1);
-                setTotal((prev)=>prev + Number((user.price)));
-                // alert("")
-              }
+//             console.log("aftere clicck",user)
+//                 // axios.post(`http://localhost:8080/cart`,user);
+//                 setCartCount(cartCount + 1);
+//                 setTotal((prev)=>prev + Number((user.price)));
+//                 // alert("")
+//               }
   return (
     <>
       <div style={{display:"flex", gap:"20px", padding:"40px"}} >
