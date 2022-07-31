@@ -52,12 +52,12 @@ function DetailPage() {
 //          console.log(res.data)
 //        })}, [])
 
- useEffect(() => {
-        axios.get(`http://localhost:8080/product/${id}`)
-       .then((res)=>{
-         setUser(res.data)
-         console.log(res.data)
-       })}, [])
+//  useEffect(() => {
+//         axios.get(`http://localhost:8080/product/${id}`)
+//        .then((res)=>{
+//          setUser(res.data)
+//          console.log(res.data)
+//        })}, [])
 
       //  useEffect(() => {
       //   axios.get(`${id}`)
