@@ -19,7 +19,7 @@ router.get("/",async (req,res)=>{
 
 router.get("/:id",async (req,res)=>{
 
-    const mendata= await Men.find({id:req.params.id}).lean().exec()
+    const mendata= await Men.findOne({req.params.id}).lean().exec()
     return res.status(200).send(mendata)
 
 
