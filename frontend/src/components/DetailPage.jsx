@@ -22,12 +22,12 @@ function DetailPage() {
 
 
 
-//     useEffect(() => {
-//         axios.get(`https://zaraclone.herokuapp.com/product/${id}`)
-//        .then((res)=>{
-//          setUser(res.data)
-//           console.log(res.data)
-//        })}, [])
+    useEffect(() => {
+        axios.get(`https://zaraclone.herokuapp.com/mens/${id}`)
+       .then((res)=>{
+         setUser(res.data)
+          console.log(res.data)
+       })}, [])
 
       
 
