@@ -87,7 +87,7 @@ const nav=useNavigate()
       <input onChange={handlechange} classname="input-text"type="text" id="fname" name="email" placeholder='E-MAIL'/>
   </div>
   <div className='input-text-box'>
-      <input onChange={handlechange} type="text" id="fname" name="password" placeholder='PASSWORD'/>
+      <input onChange={handlechange} type="password" id="fname" name="password" placeholder='PASSWORD'/>
   </div>
   
   <a className="forgotpassword"href='#'>HAVE YOU FORGOTTEN YOUR PASSWORD?</a>
