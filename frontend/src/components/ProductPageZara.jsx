@@ -16,7 +16,7 @@ getProduct()
 
 const getProduct = async() =>{
 
-    const data= await fetch("http://localhost:8080/product")
+    const data= await fetch("https://zaraclone.herokuapp.com/product")
 
     const res = await data.json()
 
