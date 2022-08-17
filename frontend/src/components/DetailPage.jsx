@@ -38,12 +38,12 @@ function DetailPage() {
       //    console.log(res.data)
       //  })}, [])
 
-       useEffect(() => {
-        axios.get(`https://zaraclone.herokuapp.com/womens/${id}`)
-       .then((res)=>{
-         setUser(res.data[0])
-         console.log(res.data)
-       })}, [])
+//        useEffect(() => {
+//         axios.get(`https://zaraclone.herokuapp.com/womens/${id}`)
+//        .then((res)=>{
+//          setUser(res.data[0])
+//          console.log(res.data)
+//        })}, [])
 
 //        useEffect(() => {
 //         axios.get(`http://localhost:8080/KidsData/${id}`)
