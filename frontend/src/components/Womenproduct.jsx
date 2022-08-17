@@ -24,7 +24,7 @@ console.log(res,"vikrant")
 
         {womendata.map((elem) => 
           
-          <Link to={`/WomenData/${elem.id}`}> 
+          <Link to={`/womens/${elem.id}`}> 
            <div key={elem.id}> 
           <img className='Product_image_tri'  src={elem.image} alt=""/>
            <div className='subdivproduct'> 
