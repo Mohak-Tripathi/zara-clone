@@ -27,8 +27,6 @@ const nav=useNavigate()
   
     // console.log(formdata);
 
-  // savedata()
-
   try {
   
     let res=await fetch("https://zaraclone.herokuapp.com/login",
@@ -65,11 +63,6 @@ const nav=useNavigate()
     console.log(error);
     
 }
-   
-
-
-
-
 
   }
 
@@ -87,13 +80,14 @@ const nav=useNavigate()
       <input onChange={handlechange} classname="input-text"type="text" id="fname" name="email" placeholder='E-MAIL'/>
   </div>
   <div className='input-text-box'>
-      <input onChange={handlechange} type="password" id="fname" name="password" placeholder='PASSWORD'/>
+      <input onChange={handlechange} type="password" id="fname" name="password" placeholder='PASSWORD' style={{"outline":"none",'border':"none"}}/>
   </div>
   
   <a className="forgotpassword"href='#'>HAVE YOU FORGOTTEN YOUR PASSWORD?</a>
   <button type="submit" className="login-btn" >LOGIN </button>
   </div>
  
+
 <div className='right-login-form'>
 <h4 >REGISTER</h4>
 <p>IF YOU STILL DON'T HAVE A ZARA.COM ACCOUNT, USE THIS OPTION TO ACCESS THE REGISTRATION FORM.</p>

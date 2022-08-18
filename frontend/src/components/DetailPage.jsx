@@ -8,7 +8,7 @@ import './Detail.css'
 function DetailPage() {
     const {id} =useParams();
 
-    const [user,setUser]=useState({})
+    const [user,setUser]=useState([])
 
     
     const {getData,cartCount,setCartCount,total,setTotal}=useContext(CartContext);
@@ -16,18 +16,13 @@ function DetailPage() {
     //  const {total,setTotal}=useContext()
     const {Auth}=useContext(AuthContext)
 
-
-
-
-
-
-
-    useEffect(() => {
-        axios.get(`https://zaraclone.herokuapp.com/mens/${id}`)
-       .then((res)=>{
-         setUser(res.data)
-          console.log(res.data)
-       })}, [])
+    // useEffect(() => {
+      setUser(axios.get(`https://zaraclone.herokuapp.com/mens/${id}`)
+       .then((res)=>res.data))
+        // console.log(res.data,"res.data")
+        //  setUser(res.data))
+        // })}, [])
+        console.log(user,"user")
 
       
 
@@ -154,11 +149,11 @@ function DetailPage() {
       <div style={{display:"flex", flexDirection:"column",margin:"auto"}}>
              {
             <div className='detail_div' style={{display:"flex", flexDirection:"column"}}>
-            <img className="detail_img" src={user.image} alt="" />
+            <img className="detail_img" src={user[0].image} alt="" />
 
-            <span> {user.name} </span>
+            <span> {user[0].name} </span>
 
-            <span>Price: {user.price} </span>
+            <span>Price: {user[0].price} </span>
             {Auth?<button 
 //              onClick={(e)=>handleProduct(user)}
             >Add to Cart</button>
